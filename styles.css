@@ -1,0 +1,134 @@
+/* Estilo básico para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Estilo para la navegación */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de bienvenida */
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Efecto estrellado */
+body {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+    background:transparent url(./img/stars02.png) repeat top center;
+    z-index:-2;
+    -moz-animation:move-twink-back 100s linear infinite;
+    -ms-animation:move-twink-back 100s linear infinite;
+    -o-animation:move-twink-back 100s linear infinite;
+    -webkit-animation:move-twink-back 100s linear infinite;
+    animation:move-twink-back 100s linear infinite;
+    background:#000 url(./img/stars01.png) repeat top center
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+/* About-me  */
+#about-me {
+    padding: 50px 20px;
+}
+
+#about-me-slides{
+    display: flex;
+    gap: 2rem;
+}
+
+.slide {
+    background-color: rgba(30,35, 30, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+/* Proyectos */
+#projects {
+    padding: 50px 20px;
+}
+
+#projects-slides{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#developer{
+    flex-grow: 2;
+}
+
+#data-analyst{
+    flex-grow: 2;
+}
+
+/* Sección de contacto */
+#contact {
+    padding: 50px 20px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 480px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    .project-tile {
+        text-align: center;
+    }
+}
+
+
+
