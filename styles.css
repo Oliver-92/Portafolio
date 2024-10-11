@@ -12,7 +12,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 #navbar ul {
@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 0;
 }
 
 #navbar ul li a {
@@ -80,10 +81,13 @@ body {
 /* About-me  */
 #about-me {
     padding: 50px 20px;
+    height: 100vh;
 }
 
 #about-me-slides{
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -93,11 +97,13 @@ body {
     margin: 20px 0;
     border-radius: 10px;
     border: 1px solid grey;
+    max-width: 40%;
 }
 
 /* Proyectos */
 #projects {
     padding: 50px 20px;
+    height: 100vh;
 }
 
 #projects-slides{
