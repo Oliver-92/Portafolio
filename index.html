@@ -22,11 +22,9 @@
 
     <!-- Welcome Section -->
     <section id="welcome-section">
-        <div class="stars">
-            <h1>Welcome to My Portfolio</h1>
-        </div>
+            <h1>EZEQUIEL OLIVER</h1>
     </section>
-    
+
     <!--About me section-->
     <section id="about-me">
         <h2>About me</h2>
@@ -73,41 +71,79 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
+
+        <!-- Botones para alternar entre secciones -->
+        <div id="projects-buttons">
+            <button id="developer-btn">Developer Web</button>
+            <button id="data-analyst-btn">Data Analyst</button>
+        </div>
+
         <div id="projects-slides">
-            <div id="developer">
-                <h3>Developer Web</h3>
-                <div class="slide">
-                    <h3>Project 1</h3>
-                    <p>A brief description of Project 1.</p>
-                    <a href="https://github.com" target="_blank">View Project</a>
+            <!-- Sección de Desarrollador Web -->
+            <div id="developer" class="project-section">
+                <div class="proj-slide">
+                    <h3>Beverly Drinks</h3>
+                    <img src="./img/beverly-drinks.png" alt="beverly-drinks" class="img-slide">
+                    <p>In progress.</p>
+                    <a href="https://github.com/Oliver-92/Beverly-Drinks" target="_blank"><button>GitHub</button></a>
+                    <a href="https://oliver-92.github.io/Beverly-Drinks/" target="_blank"><button>Website</button></a>
                 </div>
-                <div class="slide">
-                    <h3>Project 2</h3>
-                    <p>A brief description of Project 2.</p>
-                    <a href="https://github.com" target="_blank">View Project</a>
+                <div class="proj-slide">
+                    <h3>Coffee Corner</h3>
+                    <img src="./img/coffee-corner.png" alt="coffee-corner" class="img-slide">
+                    <p>Proyecto educativo de Back End. CRUD realizado con Python, Flask y MySQL a partir de un Front sencillo con HTML y CSS.</p>
+                    <a href="https://github.com/Oliver-92/Coffee-Corner" target="_blank"><button>GitHub</button></a>
+                    <a href="https://eze92.pythonanywhere.com/" target="_blank"><button>Website</button></a>
                 </div>
-                <div class="slide">
-                    <h3>Project 2</h3>
-                    <p>A brief description of Project 2.</p>
-                    <a href="https://github.com" target="_blank">View Project</a>
+                <div class="proj-slide">
+                    <h3>Original Guitars</h3>
+                    <img src="./img/original-guitars.png" alt="orginal-guitars" class="img-slide">
+                    <p>Proyecto educativo de Front End | Landing-page | Realizado con HTML y CSS | Flexbox.</p>
+                    <a href="https://github.com/Oliver-92/Product-landing-page" target="_blank"><button>GitHub</button></a>
+                    <a href="https://oliver-92.github.io/Product-landing-page/" target="_blank"><button>Website</button></a>
+                </div>
+                <div class="proj-slide">
+                    <h3>Magazine</h3>
+                    <img src="./img/magazine.png" alt="magazine" class="img-slide">
+                    <p>Proyecto educativo de Front End | Revista | Realizado con HTML y CSS | Grid.</p>
+                    <a href="https://github.com/Oliver-92/Magazine" target="_blank"><button>GitHub</button></a>
+                    <a href="https://oliver-92.github.io/Magazine/" target="_blank"><button>Website</button></a>
+                </div>
+                <div class="proj-slide">
+                    <h3>Página Homenaje a René Favoloro</h3>
+                    <img src="./img/pagina-homenaje.png" alt="pagina-homenaje-favaloro" class="img-slide">
+                    <p>Proyecto educativo de Front End | Página de homenaje | Carta emulando escritura a mano | Realizado con html y css.</p>
+                    <a href="https://github.com/Oliver-92/Pagina-homenaje-Favaloro" target="_blank"><button>GitHub</button></a>
+                    <a href="https://oliver-92.github.io/Pagina-homenaje-Favaloro/" target="_blank"><button>Website</button></a>
+                </div>
+                <div class="proj-slide">
+                    <h3>Photo cat gallery</h3>
+                    <img src="./img/photo-cat-gallery.png" alt="photo-cat-gallery" class="img-slide">
+                    <p>Proyecto educativo de Front End | Galería de fotos | Realizado con HTML y CSS | Flexbox.</p>
+                    <a href="https://github.com/Oliver-92/Photo-cat-gallery" target="_blank"><button>GitHub</button></a>
+                    <a href="https://oliver-92.github.io/Photo-cat-gallery/" target="_blank"><button>Website</button></a>
                 </div>
             </div>
-            <div id="data-analyst">
-                <h3>Data Analyst</h3>
-                <div class="slide">
-                    <h3>Project 1</h3>
+
+            <!-- Sección de Analista de Datos -->
+            <div id="data-analyst" class="project-section">
+                <div class="proj-slide">
+                    <h3>Project data 1</h3>
                     <p>A brief description of Project 1.</p>
-                    <a href="https://github.com" target="_blank">View Project</a>
+                    <a href="https://github.com" target="_blank"><button>GitHub</button></a>
+                    <a href="https://github.com" target="_blank"><button>Dashboard</button></a>
                 </div>
-                <div class="slide">
-                    <h3>Project 2</h3>
+                <div class="proj-slide">
+                    <h3>Project data 2</h3>
                     <p>A brief description of Project 2.</p>
-                    <a href="https://github.com" target="_blank">View Project</a>
+                    <a href="https://github.com" target="_blank"><button>GitHub</button></a>
+                    <a href="https://github.com" target="_blank"><button>Dashboard</button></a>
                 </div>
-                <div class="slide">
-                    <h3>Project 2</h3>
+                <div class="proj-slide">
+                    <h3>Project data 2</h3>
                     <p>A brief description of Project 2.</p>
-                    <a href="https://github.com" target="_blank">View Project</a>
+                    <a href="https://github.com" target="_blank"><button>GitHub</button></a>
+                    <a href="https://github.com" target="_blank"><button>Dashboard</button></a>
                 </div>
             </div>
         </div>
@@ -119,6 +155,8 @@
         <p>Feel free to reach out!</p>
         <a id="profile-link" href="https://github.com" target="_blank">GitHub Profile</a>
     </section>
+
+    <script src="./index.js"></script>
 
 </body>
 

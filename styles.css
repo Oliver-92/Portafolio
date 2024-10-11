@@ -13,6 +13,7 @@ body {
     top: 0;
     width: 100%;
     padding: 10px 0;
+    box-shadow: 5px 5px 10px white;
 }
 
 #navbar ul {
@@ -82,6 +83,7 @@ body {
 #about-me {
     padding: 50px 20px;
     height: 100vh;
+    scroll-margin-top: 2.5rem;
 }
 
 #about-me-slides{
@@ -104,14 +106,52 @@ body {
 #projects {
     padding: 50px 20px;
     height: 100vh;
+    scroll-margin-top: 2.5rem;
 }
 
 #projects-slides{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    height: 100%;
 }
 
+#projects-buttons {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(30,35, 30, 0.5);
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.project-section {
+    display: none;  /* Oculta las secciones inicialmente */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#developer {
+    display: flex; /* Muestra la sección Desarrollador Web por defecto */
+}
+
+.proj-slide {
+    background-color: rgba(30,35, 30, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid grey;
+    max-width: 25%;
+}
+
+.img-slide{
+    width: 100%;
+}
+
+/*
 #developer{
     flex-grow: 2;
 }
@@ -119,6 +159,7 @@ body {
 #data-analyst{
     flex-grow: 2;
 }
+*/
 
 /* Sección de contacto */
 #contact {
