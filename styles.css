@@ -147,6 +147,12 @@ button {
     max-width: 25%;
 }
 
+.proj-slide a{
+    display: inline-block; 
+    text-align: center;
+    margin-top: auto;
+}
+
 .img-slide{
     width: 100%;
 }
