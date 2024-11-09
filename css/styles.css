@@ -117,6 +117,18 @@ body {
     line-height: 2;
 }
 
+#about-me span{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#about-me > span > img{
+    width: 100px;
+}
+
 /* Proyectos */
 #projects {
     padding: 50px 20px;
@@ -191,10 +203,85 @@ button {
 */
 
 /* Sección de contacto */
-#contact {
-    padding: 50px 20px;
+
+#contact{
+    margin-top: 200px;
 }
 
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Estilo de los labels y los inputs */
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Estilo del botón */
+.contact-form button {
+    width: 90%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 50px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 15px;
+        max-width: 500px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
 /* Media Query para pantallas pequeñas */
 @media (max-width: 480px) {
     #navbar ul {
