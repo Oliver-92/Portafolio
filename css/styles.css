@@ -43,100 +43,147 @@ body {
     text-align: center;
 }
 
-#welcome-section h1{
+#welcome-section h1 {
     font-family: 'Fira Code', sans-serif;
     font-size: 4rem;
     letter-spacing: 1rem;
 }
 
-#welcome-section h3{
+#welcome-section h3 {
     font-size: 1.5rem;
     font-family: monospace, 'Fira Code', arial;
 }
 
 /* Efecto estrellado */
 body {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100%;
-    display:block;
-    background:transparent url(./img/stars02.png) repeat top center;
-    z-index:-2;
-    -moz-animation:move-twink-back 100s linear infinite;
-    -ms-animation:move-twink-back 100s linear infinite;
-    -o-animation:move-twink-back 100s linear infinite;
-    -webkit-animation:move-twink-back 100s linear infinite;
-    animation:move-twink-back 100s linear infinite;
-    background:#000 url(./img/stars01.png) repeat top center
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent url("../img/stars02.png") repeat top center;
+    z-index: -2;
+    -moz-animation: move-twink-back 100s linear infinite;
+    -ms-animation: move-twink-back 100s linear infinite;
+    -o-animation: move-twink-back 100s linear infinite;
+    -webkit-animation: move-twink-back 100s linear infinite;
+    animation: move-twink-back 100s linear infinite;
+    background: #000 url("../img/stars01.png") repeat top center
 }
 
 @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
 }
+
 @-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
 }
+
 @-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
 }
+
 @-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
 }
 
 /* About-me  */
 #about-me {
     padding: 50px 20px;
-    height: 100vh;
+    height: 90vh;
     scroll-margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    /* Asegura que los elementos estén apilados verticalmente */
+    align-items: center;
 }
 
-#about-me-slides{
+#about-me h2 {
+    margin-right: auto;
+}
+
+#about-me-slides {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
+    flex-wrap: nowrap;
+    align-items: center;
     margin: 0 10rem;
 }
 
-.slide {
-    background-color: rgba(30,35, 30, 0.5);
+.slide-text {
+    background-color: rgba(30, 35, 30, 0.5);
     padding: 20px;
-    margin: 20px 0;
     border-radius: 10px;
     border: 1px solid grey;
-    max-width: 35%;
+    max-width: 30%;
     font-size: 1.2rem;
     line-height: 2;
+    height: fit-content;
 }
 
-#about-me span{
-    margin-top: 50px;
+.slide-img {
+    width: 600px;
+    /* Ajusta al tamaño que necesites */
+    height: 600px;
+    /* Debe ser igual al width para un círculo perfecto */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Esto asegura que la imagen cubra todo el espacio sin distorsionarse */
+}
+
+#about-me span {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
-#about-me > span > img{
+#about-me>span>img {
     width: 100px;
 }
 
 /* Proyectos */
 #projects {
     padding: 50px 20px;
-    height: 100vh;
     scroll-margin-top: 2.5rem;
 }
 
-#projects-slides{
+#projects-slides {
     height: 100%;
 }
 
@@ -150,23 +197,25 @@ button {
     margin: 15px;
     cursor: pointer;
     color: white;
-    background-color: rgba(30,35, 30, 0.5);
+    background-color: rgba(30, 35, 30, 0.5);
     border: 1px solid grey;
     border-radius: 5px;
 }
 
 .project-section {
-    display: none;  /* Oculta las secciones inicialmente */
+    display: none;
+    /* Oculta las secciones inicialmente */
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 #developer {
-    display: flex; /* Muestra la sección Desarrollador Web por defecto */
+    display: flex;
+    /* Muestra la sección Desarrollador Web por defecto */
 }
 
 .proj-slide {
-    background-color: rgba(30,35, 30, 0.5);
+    background-color: rgba(30, 35, 30, 0.5);
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -176,18 +225,18 @@ button {
     flex-direction: column;
 }
 
-.proj-slide a{
-    display: inline-block; 
+.proj-slide a {
+    display: inline-block;
     text-align: center;
     margin-top: auto;
 }
 
-.img-slide{
+.img-slide {
     width: 100%;
-    
+
 }
 
-.btn-container{
+.btn-container {
     margin-top: auto;
     display: flex;
 }
@@ -204,7 +253,7 @@ button {
 
 /* Sección de contacto */
 
-#contact{
+#contact {
     margin-top: 200px;
 }
 
@@ -256,7 +305,7 @@ button {
 
 /* Footer */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,6 +331,7 @@ footer{
         padding: 10px;
     }
 }
+
 /* Media Query para pantallas pequeñas */
 @media (max-width: 480px) {
     #navbar ul {
@@ -292,6 +342,3 @@ footer{
         text-align: center;
     }
 }
-
-
-
