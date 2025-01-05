@@ -1,9 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Estilo básico para el cuerpo */
 body {
     font-family: 'Coda', sans-serif, arial;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     color: white;
 }
 
@@ -14,6 +17,19 @@ body {
     width: 100%;
     padding: 10px 0;
     box-shadow: 5px 5px 10px white;
+    z-index: 1;
+}
+
+.navbar-transparent {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar opaco */
+.navbar-opaque {
+    background-color: #000; /* Color de fondo opaco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    transition: background-color 0.3s ease;
 }
 
 #navbar ul {
@@ -52,66 +68,6 @@ body {
 #welcome-section h3 {
     font-size: 1.5rem;
     font-family: monospace, 'Fira Code', arial;
-}
-
-/* Efecto estrellado */
-body {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: transparent url("../img/stars02.png") repeat top center;
-    z-index: -2;
-    -moz-animation: move-twink-back 100s linear infinite;
-    -ms-animation: move-twink-back 100s linear infinite;
-    -o-animation: move-twink-back 100s linear infinite;
-    -webkit-animation: move-twink-back 100s linear infinite;
-    animation: move-twink-back 100s linear infinite;
-    background: #000 url("../img/stars01.png") repeat top center
-}
-
-@keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
-}
-
-@-webkit-keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
-}
-
-@-moz-keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
-}
-
-@-ms-keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
 }
 
 /* About-me  */
@@ -294,10 +250,12 @@ body {
 /* Sección de contacto */
 
 #contact {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1400px;
     margin: 200px auto 0 auto;
-    min-height: 70vh;
+    min-height: 90vh;
     scroll-margin-top: 2.5rem;
     padding: clamp(2rem, 5vw, 50px) clamp(1rem, 2vw, 20px);
 }
@@ -355,8 +313,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin-top: auto;
     padding: 50px;
+    
 }
 
 .social-media{
@@ -369,6 +328,67 @@ footer {
 .social-media > a > img {
     width: 100px;
     height: 35px;
+}
+
+
+/* Efecto estrellado */
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent url("../img/stars02.png") repeat top center;
+    z-index: -2;
+    -moz-animation: move-twink-back 100s linear infinite;
+    -ms-animation: move-twink-back 100s linear infinite;
+    -o-animation: move-twink-back 100s linear infinite;
+    -webkit-animation: move-twink-back 100s linear infinite;
+    animation: move-twink-back 100s linear infinite;
+    background: #000 url("../img/stars01.png") repeat top center
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
 }
 
 /* Estilos responsivos */
