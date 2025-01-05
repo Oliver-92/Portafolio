@@ -116,85 +116,169 @@ body {
 
 /* About-me  */
 #about-me {
-    padding: 50px 20px;
-    height: 90vh;
+    padding: clamp(2rem, 5vw, 50px) clamp(1rem, 2vw, 20px);
+    min-height: 90vh;
     scroll-margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
-    /* Asegura que los elementos estén apilados verticalmente */
     align-items: center;
+    gap: 2rem;
 }
 
 #about-me h2 {
-    margin-right: auto;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0;
 }
 
 #about-me-slides {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: nowrap;
+    gap: clamp(1rem, 3vw, 2rem);
     align-items: center;
-    margin: 0 10rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
 
 .slide-text {
     background-color: rgba(30, 35, 30, 0.5);
-    padding: 20px;
+    padding: clamp(1rem, 2vw, 20px);
     border-radius: 10px;
     border: 1px solid grey;
-    max-width: 30%;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     line-height: 2;
-    height: fit-content;
+    flex: 1;
 }
 
 .slide-img {
-    width: 600px;
-    /* Ajusta al tamaño que necesites */
-    height: 600px;
-    /* Debe ser igual al width para un círculo perfecto */
+    width: clamp(200px, 40vw, 500px);
+    height: clamp(200px, 40vw, 500px);
     overflow: hidden;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .slide-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Esto asegura que la imagen cubra todo el espacio sin distorsionarse */
 }
 
-#about-me span {
+.skills-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: clamp(0.5rem, 1vw, 1rem);
     flex-wrap: wrap;
     margin-top: auto;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
 
-#about-me>span>img {
-    width: 100px;
+.skills-container img {
+    width: clamp(80px, 10vw, 100px);
+    height: auto;
 }
 
 /* Proyectos */
 #projects {
-    padding: 50px 20px;
+    padding: clamp(2rem, 5vw, 50px) clamp(1rem, 2vw, 20px);
     scroll-margin-top: 2.5rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 #projects-slides {
-    height: 100%;
+    width: 100%;
 }
 
 #projects-buttons {
-    margin-bottom: 20px;
+    margin-bottom: clamp(1rem, 3vw, 20px);
     text-align: center;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 15px;
+#projects-buttons button {
+    padding: clamp(0.5rem, 1.5vw, 10px) clamp(1rem, 2vw, 20px);
+    margin: clamp(0.5rem, 1.5vw, 15px);
+    cursor: pointer;
+    color: white;
+    background-color: rgba(30, 35, 30, 0.5);
+    border: 1px solid grey;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#projects-buttons button:hover {
+    background-color: rgba(40, 45, 40, 0.7);
+    box-shadow: 1px 1px 10px white;
+}
+
+.project-section {
+    display: none;
+    gap: clamp(1rem, 3vw, 2rem);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#developer {
+    display: flex;
+}
+
+.proj-slide {
+    background-color: rgba(30, 35, 30, 0.5);
+    padding: clamp(1rem, 2vw, 20px);
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 100%;
+    max-width: 400px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.proj-slide:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 10px white;
+}
+
+.proj-slide h3 {
+    margin: 0;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.proj-slide p {
+    flex-grow: 1;
+    margin: 0;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    line-height: 1.6;
+}
+
+.img-slide {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-container a {
+    flex: 1;
+    max-width: 150px;
+}
+
+.btn-container button {
+    width: 100%;
+    margin: 0;
+    padding: clamp(0.5rem, 1vw, 0.75rem);
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
     cursor: pointer;
     color: white;
     background-color: rgba(30, 35, 30, 0.5);
@@ -202,59 +286,20 @@ button {
     border-radius: 5px;
 }
 
-.project-section {
-    display: none;
-    /* Oculta las secciones inicialmente */
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.btn-container button:hover {
+    background-color: rgba(40, 45, 40, 0.7);
+    box-shadow: 1px 1px 10px white;
 }
-
-#developer {
-    display: flex;
-    /* Muestra la sección Desarrollador Web por defecto */
-}
-
-.proj-slide {
-    background-color: rgba(30, 35, 30, 0.5);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    border: 1px solid grey;
-    max-width: 25%;
-    display: flex;
-    flex-direction: column;
-}
-
-.proj-slide a {
-    display: inline-block;
-    text-align: center;
-    margin-top: auto;
-}
-
-.img-slide {
-    width: 100%;
-
-}
-
-.btn-container {
-    margin-top: auto;
-    display: flex;
-}
-
-/*
-#developer{
-    flex-grow: 2;
-}
-
-#data-analyst{
-    flex-grow: 2;
-}
-*/
 
 /* Sección de contacto */
 
 #contact {
-    margin-top: 200px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 200px auto 0 auto;
+    min-height: 70vh;
+    scroll-margin-top: 2.5rem;
+    padding: clamp(2rem, 5vw, 50px) clamp(1rem, 2vw, 20px);
 }
 
 .contact-form {
@@ -314,7 +359,58 @@ footer {
     padding: 50px;
 }
 
+.social-media{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-media > a > img {
+    width: 100px;
+    height: 35px;
+}
+
 /* Estilos responsivos */
+@media (max-width: 1200px) {
+    .proj-slide {
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    #about-me-slides {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .slide-text {
+        max-width: 90%;
+    }
+
+    .slide-img {
+        width: clamp(150px, 50vw, 300px);
+        height: clamp(150px, 50vw, 300px);
+    }
+
+    .proj-slide {
+        max-width: 100%;
+    }
+
+    #projects-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .toggle-btn {
+        width: 80%;
+        max-width: 300px;
+        margin: 0;
+    }
+}
+
 @media (max-width: 600px) {
     .contact-form {
         padding: 15px;
@@ -332,13 +428,31 @@ footer {
     }
 }
 
-/* Media Query para pantallas pequeñas */
 @media (max-width: 480px) {
-    #navbar ul {
-        flex-direction: column;
+    #about-me {
+        padding: 1rem;
     }
 
-    .project-tile {
-        text-align: center;
+    .skills-container img {
+        width: clamp(60px, 15vw, 80px);
+    }
+
+    #projects {
+        padding: 1rem;
+    }
+
+    .proj-slide {
+        min-height: auto;
+        padding: 1rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-container a {
+        width: 100%;
+        max-width: 200px;
     }
 }
