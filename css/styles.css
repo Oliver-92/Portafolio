@@ -314,7 +314,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    padding: 50px;
+    padding: 50px 0;
     
 }
 
@@ -415,13 +415,7 @@ body {
 
     .proj-slide {
         max-width: 100%;
-    }
-
-    #projects-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+        margin: auto 35px;
     }
 
     .toggle-btn {
@@ -449,8 +443,17 @@ body {
 }
 
 @media (max-width: 480px) {
-    #about-me {
-        padding: 1rem;
+
+    .navbar {
+        font-size: 0.8rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 3rem;
+    }
+
+    #welcome-section h3 {
+        font-size: 1.2rem;
     }
 
     .skills-container img {
@@ -464,6 +467,7 @@ body {
     .proj-slide {
         min-height: auto;
         padding: 1rem;
+        margin: auto 15px;
     }
 
     .btn-container {
