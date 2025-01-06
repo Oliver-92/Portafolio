@@ -1,3 +1,4 @@
+// Generate subtitle with Typewriter
 const subtitle = document.getElementById('subtitle');
 
 const typewriter = new Typewriter(subtitle, {
@@ -14,12 +15,12 @@ typewriter
     .start();
 
 
+// Navbar opaque when scrolling
 window.addEventListener('scroll', function () {
     const navbar = document.getElementById('navbar');
     const scrollPosition = window.scrollY;
 
-    // Cambia la clase según la posición de desplazamiento
-    if (scrollPosition > 50) { // Ajusta el valor según cuándo quieres el cambio
+    if (scrollPosition > 50) {
         navbar.classList.add('navbar-opaque');
         navbar.classList.remove('navbar-transparent');
     } else {
@@ -29,13 +30,13 @@ window.addEventListener('scroll', function () {
 });
 
 
-// Función para alternar entre secciones
+// Switch between sections
 document.getElementById('developer-btn').addEventListener('click', function () {
-    document.getElementById('developer').style.display = 'flex';  // Muestra la sección de Desarrollador Web
-    document.getElementById('data-analyst').style.display = 'none';  // Oculta la sección de Analista de Datos
+    document.getElementById('developer').style.display = 'flex';
+    document.getElementById('data-analyst').style.display = 'none';
 });
 
 document.getElementById('data-analyst-btn').addEventListener('click', function () {
-    document.getElementById('developer').style.display = 'none';  // Oculta la sección de Desarrollador Web
-    document.getElementById('data-analyst').style.display = 'flex';  // Muestra la sección de Analista de Datos
+    document.getElementById('developer').style.display = 'none';
+    document.getElementById('data-analyst').style.display = 'flex';
 });

@@ -1,8 +1,13 @@
+/* General styles */
+
 * {
     box-sizing: border-box;
 }
 
-/* Estilo básico para el cuerpo */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Coda', sans-serif, arial;
     margin: 0;
@@ -10,7 +15,7 @@ body {
     color: white;
 }
 
-/* Estilo para la navegación */
+/* Navbar */
 #navbar {
     position: fixed;
     top: 0;
@@ -25,10 +30,9 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Navbar opaco */
 .navbar-opaque {
-    background-color: #000; /* Color de fondo opaco */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    background-color: #000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
@@ -49,7 +53,7 @@ body {
     text-decoration: underline;
 }
 
-/* Sección de bienvenida */
+/* Welcome section */
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -136,7 +140,7 @@ body {
     height: auto;
 }
 
-/* Proyectos */
+/* Projects */
 #projects {
     padding: clamp(2rem, 5vw, 50px) clamp(1rem, 2vw, 20px);
     scroll-margin-top: 2.5rem;
@@ -155,13 +159,13 @@ body {
 }
 
 #projects-buttons button {
-    padding: clamp(0.5rem, 1.5vw, 10px) clamp(1rem, 2vw, 20px);
+    padding: clamp(0.5rem, 1vw, 0.75rem);
     margin: clamp(0.5rem, 1.5vw, 15px);
     cursor: pointer;
     color: white;
     background-color: rgba(30, 35, 30, 0.5);
     border: 1px solid grey;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -230,7 +234,7 @@ body {
     max-width: 150px;
 }
 
-.btn-container button {
+.btn-container a {
     width: 100%;
     margin: 0;
     padding: clamp(0.5rem, 1vw, 0.75rem);
@@ -239,15 +243,17 @@ body {
     color: white;
     background-color: rgba(30, 35, 30, 0.5);
     border: 1px solid grey;
-    border-radius: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.btn-container button:hover {
+.btn-container a:hover {
     background-color: rgba(40, 45, 40, 0.7);
     box-shadow: 1px 1px 10px white;
 }
 
-/* Sección de contacto */
+/* Contact */
 
 #contact {
     display: flex;
@@ -269,8 +275,6 @@ body {
     text-align: center;
 }
 
-
-/* Estilo de los labels y los inputs */
 .contact-form label {
     display: block;
     margin-bottom: 8px;
@@ -289,7 +293,6 @@ body {
     font-size: 1rem;
 }
 
-/* Estilo del botón */
 .contact-form button {
     width: 90%;
     padding: 12px;
@@ -315,23 +318,22 @@ footer {
     align-items: center;
     margin-top: auto;
     padding: 50px 0;
-    
+
 }
 
-.social-media{
+.social-media {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
 }
 
-.social-media > a > img {
+.social-media>a>img {
     width: 100px;
     height: 35px;
 }
 
-
-/* Efecto estrellado */
+/* Starry effect */
 body {
     position: absolute;
     top: 0;
@@ -391,7 +393,7 @@ body {
     }
 }
 
-/* Estilos responsivos */
+/* Media queries */
 @media (max-width: 1200px) {
     .proj-slide {
         max-width: calc(50% - 1rem);
@@ -468,11 +470,6 @@ body {
         min-height: auto;
         padding: 1rem;
         margin: auto 15px;
-    }
-
-    .btn-container {
-        flex-direction: column;
-        align-items: center;
     }
 
     .btn-container a {
