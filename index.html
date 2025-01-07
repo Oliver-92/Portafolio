@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,14 +17,22 @@
 <body>
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar-transparent">
-        <ul>
-            <li><a href="#welcome-section">Inicio</a></li>
-            <li><a href="#about-me">Sobre Mi</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav id="navbar" class="navbar-transparent">
+            <ul>
+                <li><a href="#welcome-section" data-i18n="index">Inicio</a></li>
+                <li><a href="#about-me" data-i18n="about">Sobre Mi</a></li>
+                <li><a href="#projects" data-i18n="projects">Proyectos</a></li>
+                <li><a href="#contact" data-i18n="contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="options-container">
+            <button id="languageToggle" class="language-btn">
+                <span class="language-text">ENGLISH</span>
+            </button>
+            <button id="toggle-theme">Modo Claro</button>
+        </div>
+    </header>
 
     <!-- Welcome section -->
     <section id="welcome-section">
@@ -34,9 +42,9 @@
 
     <!--About me section-->
     <section id="about-me">
-        <h2>Sobre mi</h2>
+        <h2 data-i18n="aboutTitle">Sobre mi</h2>
         <div id="about-me-slides">
-            <div class="slide-text">
+            <div class="slide-text" data-i18n="aboutText">
                 Programador apasionado por el desarrollo web y el análisis de datos. Actualmente en
                 búsqueda de oportunidades para aplicar y ampliar mis conocimientos en el mundo real. Poseo habilidades
                 sólidas en lenguajes de programación como Python y JavaScript, así como un fuerte compromiso con la
@@ -44,7 +52,7 @@
                 como profesional en el campo de la tecnología.
             </div>
             <div class="slide-img">
-                <img src="./img/Avatar.jpg" alt="">
+                <img src="./img/Avatar.webp" alt="" data-i18n-alt="avatarAlt">
             </div>
         </div>
         <span class="skills-container">
@@ -70,138 +78,131 @@
 
     <!-- Projects section -->
     <section id="projects">
-        <h2>Proyectos</h2>
+        <h2 data-i18n="projectsTitle">Proyectos</h2>
 
         <!-- Buttons to switch between projects -->
         <div id="projects-buttons">
-            <button id="developer-btn">Desarrollador Web</button>
-            <button id="data-analyst-btn">Analista de Datos</button>
+            <button id="developer-btn" data-i18n="webDevBtn">Desarrollador Web</button>
+            <button id="data-analyst-btn" data-i18n="dataAnalystBtn">Analista de Datos</button>
         </div>
 
         <div id="projects-slides">
             <!-- Developer section -->
             <div id="developer" class="project-section">
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Beverly Drinks</h3>
-                    <img src="./img/beverly-drinks.png" alt="beverly-drinks" class="img-slide">
-                    <p>In progress.</p>
+                    <h3 data-i18n="beverlyTrendsTitle"></h3>
+                    <img src="./img/beverly-trends.webp" data-i18n-alt="beverlyTrendsAlt" class="img-slide">
+                    <p data-i18n="beverlyTrendsDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Beverly-Drinks"
-                            target="_blank">GitHub</a>
-                        <a href="https://oliver-92.github.io/Beverly-Drinks/"
-                            target="_blank">Website</a>
+                        <a href="https://github.com/Oliver-92/Beverly-Trends" target="_blank">GitHub</a>
+                        <a href="https://oliver-92.github.io/Beverly-Trends/" target="_blank">Website</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Coffee Corner</h3>
-                    <img src="./img/coffee-corner.png" alt="coffee-corner" class="img-slide">
-                    <p>Proyecto educativo de Back End. CRUD realizado con Python, Flask y MySQL a partir de un Front
-                        sencillo con HTML y CSS.</p>
+                    <h3 data-i18n="beverlyIndumentariaTitle"></h3>
+                    <img src="./img/beverly-indumentaria.webp" data-i18n-alt="beverlyIndumentariaAlt" class="img-slide">
+                    <p data-i18n="beverlyIndumentariaDesc"></p>
+                    <div class="btn-container">
+                        <a href="https://github.com/Oliver-92/Beverly-Indumentaria" target="_blank">GitHub</a>
+                        <a href="https://oliver-92.github.io/Beverly-Indumentaria/" target="_blank">Website</a>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="proj-slide">
+                    <h3 data-i18n="coffeeCornerTitle"></h3>
+                    <img src="./img/coffee-corner.webp" data-i18n-alt="coffeeCornerAlt" class="img-slide">
+                    <p data-i18n="coffeeCornerDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Coffee-Corner" target="_blank">GitHub</a>
                         <a href="https://eze92.pythonanywhere.com/" target="_blank">Website</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Original Guitars</h3>
-                    <img src="./img/original-guitars.png" alt="orginal-guitars" class="img-slide">
-                    <p>Proyecto educativo de Front End | Landing-page | Realizado con HTML y CSS | Flexbox.</p>
+                    <h3 data-i18n="pokemonAppTitle"></h3>
+                    <img src="./img/pokemon-search-app.webp" data-i18n-alt="pokemonAppAlt" class="img-slide">
+                    <p data-i18n="pokemonAppDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Product-landing-page"
-                            target="_blank">GitHub</a>
-                        <a href="https://oliver-92.github.io/Product-landing-page/"
-                            target="_blank">Website</a>
+                        <a href="https://github.com/Oliver-92/Pokemon-Search-App" target="_blank">GitHub</a>
+                        <a href="https://oliver-92.github.io/Pokemon-Search-App/" target="_blank">Website</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Magazine</h3>
-                    <img src="./img/magazine.png" alt="magazine" class="img-slide">
-                    <p>Proyecto educativo de Front End | Revista | Realizado con HTML y CSS | Grid.</p>
+                    <h3 data-i18n="magazineTitle"></h3>
+                    <img src="./img/magazine.webp" data-i18n-alt="magazineAlt" class="img-slide">
+                    <p data-i18n="magazineDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Magazine" target="_blank">GitHub</a>
                         <a href="https://oliver-92.github.io/Magazine/" target="_blank">Website</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Página Homenaje a René Favoloro</h3>
-                    <img src="./img/pagina-homenaje.png" alt="pagina-homenaje-favaloro" class="img-slide">
-                    <p>Proyecto educativo de Front End | Página de homenaje | Carta emulando escritura a mano |
-                        Realizado con html y css.</p>
+                    <h3 data-i18n="catGalleryTitle"></h3>
+                    <img src="./img/photo-cat-gallery.webp" data-i18n-alt="catGalleryAlt" class="img-slide">
+                    <p data-i18n="catGalleryDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Pagina-homenaje-Favaloro"
-                            target="_blank">GitHub</a>
-                        <a href="https://oliver-92.github.io/Pagina-homenaje-Favaloro/"
-                            target="_blank">Website</a>
-                    </div>
-                </div>
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3>Photo cat gallery</h3>
-                    <img src="./img/photo-cat-gallery.png" alt="photo-cat-gallery" class="img-slide">
-                    <p>Proyecto educativo de Front End | Galería de fotos | Realizado con HTML y CSS | Flexbox.</p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Photo-cat-gallery"
-                            target="_blank">GitHub</a>
-                        <a href="https://oliver-92.github.io/Photo-cat-gallery/"
-                            target="_blank">Website</a>
+                        <a href="https://github.com/Oliver-92/Photo-cat-gallery" target="_blank">GitHub</a>
+                        <a href="https://oliver-92.github.io/Photo-cat-gallery/" target="_blank">Website</a>
                     </div>
                 </div>
             </div>
 
             <!-- Data section -->
             <div id="data-analyst" class="project-section">
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Relevamiento de Dependencias de la UNLP</h3>
-                    <img src="./img/dasboard-unlp.png" alt="dashboard-image" class="img-slide">
-                    <p>Proyecto personal de Data Analytics a partir de un relevamiento sobre unidades de desarrollo e
-                        investigación de la UNLP. EDA realizado con Python y sus librerías. Dashboard interactivo
-                        realizado con LookerStudio.</p>
+                    <h3 data-i18n="unlpTitle"></h3>
+                    <img src="./img/dasboard-unlp.webp" data-i18n-alt="unlpAlt" class="img-slide">
+                    <p data-i18n="unlpDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Relevamiento-Dependencias-UNLP"
-                            target="_blank">GitHub</a>
+                        <a href="https://github.com/Oliver-92/Relevamiento-Dependencias-UNLP" target="_blank">GitHub</a>
                         <a href="https://lookerstudio.google.com/reporting/3fad100c-9982-4980-95de-f5a8a6fdca57/page/a6w7D"
                             target="_blank">Dashboard</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Efectos psicológicos del Covid</h3>
-                    <img src="./img/dashboard-covid.png" alt="dashboard-image" class="img-slide">
-                    <p>EDA realizado con Python (Pandas) sobre un conjunto de datos resultado de una encuesta sobre la
-                        pandemia de COVID-19. | Visualizaciones con Seaborn y Matplotlib | Modelos de ML con
-                        Scikit-Learn | Dashboard con LookerStudio.</p>
+                    <h3 data-i18n="covidEffectsTitle"></h3>
+                    <img src="./img/dashboard-covid.webp" alt="dashboard-image" class="img-slide"
+                        data-i18n-alt="covidEffectsAlt">
+                    <p data-i18n="covidEffectsDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Efectos-Psicologicos-del-covid"
-                            target="_blank">GitHub</a>
-                        <a href="hhttps://lookerstudio.google.com/reporting/e98523b8-1069-415d-9092-e9f59174e759/page/CnCvD?s=lGvQdXWqNag"
+                        <a href="https://github.com/Oliver-92/Efectos-Psicologicos-del-covid" target="_blank">GitHub</a>
+                        <a href="https://lookerstudio.google.com/reporting/e98523b8-1069-415d-9092-e9f59174e759/page/CnCvD"
                             target="_blank">Dashboard</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Fintech Solutions</h3>
-                    <img src="./img/dashboard_fintech04.jpg" alt="dashboard-image" class="img-slide">
-                    <p>Proyecto colaborativo en No Country. Sistema de predicción de fraude en transacciones financieras
-                        con modelo de Machine Learning.</p>
+                    <h3 data-i18n="fintechSolutionsTitle"></h3>
+                    <img src="./img/dashboard_fintech04.webp" alt="dashboard-image" class="img-slide"
+                        data-i18n-alt="fintechSolutionsAlt">
+                    <p data-i18n="fintechSolutionsDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Fintech-Solutions"
-                            target="_blank">GitHub</a>
-                        <a href="https://www.youtube.com/watch?v=7bFeY4MfLls"
-                            target="_blank">Presentación</a>
+                        <a href="https://github.com/Oliver-92/Fintech-Solutions" target="_blank">GitHub</a>
+                        <a href="https://www.youtube.com/watch?v=7bFeY4MfLls" target="_blank">Presentación</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Analisis de ventas</h3>
-                    <img src="./img/dashboard-ventas.png" alt="dashboard-image" class="img-slide">
-                    <p>EDA realizado con Python y SQLite sobre 3 tablas (vendedores, artículos y operaciones) |
-                        Visualizaciones con Matplotlib y Seaborn | Dashboard con LookerStudio.</p>
+                    <h3 data-i18n="salesAnalysisTitle"></h3>
+                    <img src="./img/dashboard-ventas.webp" alt="dashboard-image" class="img-slide"
+                        data-i18n-alt="salesAnalysisAlt">
+                    <p data-i18n="salesAnalysisDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Data-Analytics-Analisis-de-ventas"
                             target="_blank">GitHub</a>
@@ -209,63 +210,66 @@
                             target="_blank">Dashboard</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Analisis de datos - Netflix</h3>
-                    <img src="./img/data-netflix.png" alt="dashboard-image" class="img-slide">
-                    <p>Proyecto educativo | Conexión a BBDD con SQLite | Análisis y visualización de datos con Python
-                        (Pandas | Seaborn | Matplotlib).</p>
+                    <h3 data-i18n="netflixAnalysisTitle"></h3>
+                    <img src="./img/data-netflix.webp" alt="dashboard-image" class="img-slide"
+                        data-i18n-alt="netflixAnalysisAlt">
+                    <p data-i18n="netflixAnalysisDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Data-Analytics-Netflix"
-                            target="_blank">GitHub</a>
+                        <a href="https://github.com/Oliver-92/Data-Analytics-Netflix" target="_blank">GitHub</a>
                     </div>
                 </div>
+
                 <!-- card -->
                 <div class="proj-slide">
-                    <h3>Analisis de RRHH</h3>
-                    <img src="./img/dashboard-rrhh.png" alt="dashboard-image" class="img-slide">
-                    <p>Dashboard interactivo sobre las características del personal según Departamento con datos de
-                        Google Analytics.</p>
+                    <h3 data-i18n="hrAnalysisTitle"></h3>
+                    <img src="./img/dashboard-rrhh.webp" alt="dashboard-image" class="img-slide"
+                        data-i18n-alt="hrAnalysisAlt">
+                    <p data-i18n="hrAnalysisDesc"></p>
                     <div class="btn-container">
                         <a href="https://lookerstudio.google.com/reporting/af4602c7-fffd-454a-bed1-c1e79a5d464d/page/OCMpD"
                             target="_blank">Dashboard</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contacto</h2>
+        <h2 data-i18n="contactTitle"></h2>
         <div class="contact-form">
             <form action="/submit_form" method="POST">
-                <label for="name">Nombre:</label>
+                <label for="name" data-i18n="contactNameLabel"></label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Correo Electrónico:</label>
+                <label for="email" data-i18n="contactEmailLabel"></label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="comment">Comentario:</label>
+                <label for="comment" data-i18n="contactCommentLabel"></label>
                 <textarea id="comment" name="comment" rows="4" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" data-i18n="contactButton"></button>
             </form>
         </div>
+
         <!-- Footer -->
         <footer>
             <span class="social-media">
                 <a href="https://www.github.com/Oliver-92" target="_blank">
-                    <img
-                        src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+                    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+                        alt="GitHub-Badge">
                 </a>
                 <a href="https://www.linkedin.com/in/ezequiel-oliver/" target="_blank">
-                    <img
-                        src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
+                    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
+                        alt="Linkedin-Badge">
                 </a>
                 <a href="https://www.t.me/Ezze89/" target="_blank">
-                    <img
-                        src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white">
+                    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"
+                        alt="Telegram-Badge">
                 </a>
             </span>
             <p>Mail: ezequiel.oliver@live.com.ar</p>
@@ -275,6 +279,9 @@
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/translations.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/theme.js"></script>
 
 </body>
 

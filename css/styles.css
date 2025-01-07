@@ -15,6 +15,18 @@ body {
     color: white;
 }
 
+/* Estilos predeterminados para el modo oscuro */
+:root {
+    --background-color: transparent;
+    --background-image: #000 url("../img/stars01.png") repeat top center;
+}
+
+/* Estilos para el modo claro */
+[data-theme="light"] {
+    --background-color: white; /* Color de fondo para el modo claro */
+    --background-image: none; /* Eliminar la animación o poner una imagen estática */
+}
+
 /* Navbar */
 #navbar {
     position: fixed;
@@ -51,6 +63,29 @@ body {
 
 #navbar ul li a:hover {
     text-decoration: underline;
+}
+
+.options-container {
+    position: fixed;
+    right: 0;
+    z-index: 2;
+}
+#languageToggle, #toggle-theme {
+    font-family: 'Coda', sans-serif, arial;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(30, 35, 30, 0.5);
+    border: 1px solid grey;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#languageToggle:hover, #toggle-theme:hover {
+    background-color: rgba(40, 45, 40, 0.7);
+    box-shadow: 1px 1px 10px white;
 }
 
 /* Welcome section */
@@ -159,6 +194,8 @@ body {
 }
 
 #projects-buttons button {
+    font-family: 'Coda', sans-serif, arial;
+    font-size: 1rem;
     padding: clamp(0.5rem, 1vw, 0.75rem);
     margin: clamp(0.5rem, 1.5vw, 15px);
     cursor: pointer;
@@ -335,6 +372,9 @@ footer {
 
 /* Starry effect */
 body {
+    background-color: var(--background-color);
+    background: var(--background-image);
+    z-index: -2;
     position: absolute;
     top: 0;
     left: 0;
@@ -343,14 +383,12 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    background: transparent url("../img/stars02.png") repeat top center;
-    z-index: -2;
     -moz-animation: move-twink-back 100s linear infinite;
     -ms-animation: move-twink-back 100s linear infinite;
     -o-animation: move-twink-back 100s linear infinite;
     -webkit-animation: move-twink-back 100s linear infinite;
     animation: move-twink-back 100s linear infinite;
-    background: #000 url("../img/stars01.png") repeat top center
+    
 }
 
 @keyframes move-twink-back {
