@@ -72,7 +72,6 @@ body {
 }
 #languageToggle, #toggle-theme {
     font-family: 'Coda', sans-serif, arial;
-    font-size: 1rem;
     padding: 0.5rem;
     margin: 1rem;
     cursor: pointer;
@@ -142,6 +141,7 @@ body {
     border-radius: 10px;
     border: 1px solid grey;
     font-size: clamp(1rem, 1.5vw, 1.2rem);
+    text-align: justify;
     line-height: 2;
     flex: 1;
 }
@@ -274,7 +274,7 @@ body {
 .btn-container a {
     width: 100%;
     margin: 0;
-    padding: clamp(0.5rem, 1vw, 0.75rem);
+    padding: 0.3rem;
     font-size: clamp(0.8rem, 1.2vw, 1rem);
     cursor: pointer;
     color: white;
@@ -438,7 +438,25 @@ body {
     }
 }
 
+@media (max-width: 991px) {
+    #navbar ul {
+        justify-content: start;
+        margin-left: 20px;
+    }
+}
+
 @media (max-width: 768px) {
+    .options-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0.2rem;
+    }
+
+    #languageToggle, #toggle-theme {
+        margin: 0.1rem;
+        padding: 0.3rem;
+    }
+
     #about-me-slides {
         flex-direction: column-reverse;
         text-align: center;
@@ -484,8 +502,12 @@ body {
 
 @media (max-width: 480px) {
 
-    .navbar {
+    #navbar {
         font-size: 0.8rem;
+    }
+
+    #languageToggle, #toggle-theme {
+        font-size: 0.6rem;
     }
 
     #welcome-section h1 {
@@ -513,5 +535,12 @@ body {
     .btn-container a {
         width: 100%;
         max-width: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slide-text {
+        font-size: 0.9rem;
+        max-width: 100%;
     }
 }
