@@ -9,22 +9,56 @@ html {
 }
 
 body {
-    font-family: 'Coda', sans-serif, arial;
+    font-family: var(--primary-font);
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--primary-color);
 }
 
-/* Estilos predeterminados para el modo oscuro */
+/* Default styles for dark mode */
 :root {
-    --background-color: transparent;
     --background-image: #000 url("../img/stars01.png") repeat top center;
+    --primary-color: #fff;
+    --primary-font: 'Coda', sans-serif, arial;
+    --secondary-font: 'Fira Code', sans-serif;
+    --navbar-box-shadow: 5px 5px 10px #fff;
+    --bg-navbar-opaque: #000;
+    --bg-secondary: rgba(30, 35, 30, 0.5);
+    --bg-buttons-hover: rgba(40, 45, 40, 0.7);
+    --border-buttons: 1px solid grey;
+    --box-shadow-buttons-hover: 1px 1px 10px #fff;
 }
 
-/* Estilos para el modo claro */
+/* Styles for light mode */
 [data-theme="light"] {
-    --background-color: white; /* Color de fondo para el modo claro */
-    --background-image: none; /* Eliminar la animación o poner una imagen estática */
+    --background-image: #f5f5f7;
+    --primary-color: #1d1d1f;
+    --navbar-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --bg-navbar-opaque: rgba(255, 255, 255, 0.8);
+    --bg-secondary: rgba(255, 255, 255, 0.9);
+    --bg-buttons-hover: rgba(230, 230, 235, 0.9);
+    --box-shadow-buttons-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --border-buttons: 1px solid #e0e0e0;
+}
+
+/* Specific classes for light mode */
+[data-theme="light"] .proj-slide {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .proj-slide:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .slide-text {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .navbar-opaque {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* Navbar */
@@ -33,7 +67,7 @@ body {
     top: 0;
     width: 100%;
     padding: 10px 0;
-    box-shadow: 5px 5px 10px white;
+    box-shadow: var(--navbar-box-shadow);
     z-index: 1;
 }
 
@@ -43,8 +77,7 @@ body {
 }
 
 .navbar-opaque {
-    background-color: #000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-navbar-opaque);
     transition: background-color 0.3s ease;
 }
 
@@ -58,7 +91,7 @@ body {
 
 #navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
 }
 
 #navbar ul li a:hover {
@@ -71,20 +104,24 @@ body {
     z-index: 2;
 }
 #languageToggle, #toggle-theme {
-    font-family: 'Coda', sans-serif, arial;
     padding: 0.5rem;
     margin: 1rem;
+}
+
+/* Styles for buttons */
+.btn {
+    font-family: var(--primary-font);
     cursor: pointer;
-    color: white;
-    background-color: rgba(30, 35, 30, 0.5);
-    border: 1px solid grey;
+    color: var(--primary-color);
+    background-color: var(--bg-secondary);
+    border: var(--border-buttons);
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
-#languageToggle:hover, #toggle-theme:hover {
-    background-color: rgba(40, 45, 40, 0.7);
-    box-shadow: 1px 1px 10px white;
+.btn:hover {
+    background-color: var(--bg-buttons-hover);
+    box-shadow: var(--box-shadow-buttons-hover);
 }
 
 /* Welcome section */
@@ -98,7 +135,7 @@ body {
 }
 
 #welcome-section h1 {
-    font-family: 'Fira Code', sans-serif;
+    font-family: var(--secondary-font);
     font-size: 4rem;
     letter-spacing: 1rem;
 }
@@ -136,10 +173,10 @@ body {
 }
 
 .slide-text {
-    background-color: rgba(30, 35, 30, 0.5);
+    background-color: var(--bg-secondary);
     padding: clamp(1rem, 2vw, 20px);
     border-radius: 10px;
-    border: 1px solid grey;
+    border: var(--border-buttons);
     font-size: clamp(1rem, 1.5vw, 1.2rem);
     text-align: justify;
     line-height: 2;
@@ -194,21 +231,9 @@ body {
 }
 
 #projects-buttons button {
-    font-family: 'Coda', sans-serif, arial;
     font-size: 1rem;
     padding: clamp(0.5rem, 1vw, 0.75rem);
     margin: clamp(0.5rem, 1.5vw, 15px);
-    cursor: pointer;
-    color: white;
-    background-color: rgba(30, 35, 30, 0.5);
-    border: 1px solid grey;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-#projects-buttons button:hover {
-    background-color: rgba(40, 45, 40, 0.7);
-    box-shadow: 1px 1px 10px white;
 }
 
 .project-section {
@@ -223,7 +248,7 @@ body {
 }
 
 .proj-slide {
-    background-color: rgba(30, 35, 30, 0.5);
+    background-color: var(--bg-secondary);
     padding: clamp(1rem, 2vw, 20px);
     border-radius: 10px;
     border: 1px solid grey;
@@ -269,25 +294,11 @@ body {
 .btn-container a {
     flex: 1;
     max-width: 150px;
-}
-
-.btn-container a {
-    width: 100%;
     margin: 0;
     padding: 0.3rem;
     font-size: clamp(0.8rem, 1.2vw, 1rem);
-    cursor: pointer;
-    color: white;
-    background-color: rgba(30, 35, 30, 0.5);
-    border: 1px solid grey;
-    border-radius: 10px;
     text-decoration: none;
     text-align: center;
-}
-
-.btn-container a:hover {
-    background-color: rgba(40, 45, 40, 0.7);
-    box-shadow: 1px 1px 10px white;
 }
 
 /* Contact */
@@ -316,7 +327,6 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #fff;
     text-align: left;
 }
 
@@ -372,7 +382,6 @@ footer {
 
 /* Starry effect */
 body {
-    background-color: var(--background-color);
     background: var(--background-image);
     z-index: -2;
     position: absolute;
@@ -530,11 +539,6 @@ body {
         min-height: auto;
         padding: 1rem;
         margin: auto 15px;
-    }
-
-    .btn-container a {
-        width: 100%;
-        max-width: 200px;
     }
 }
 
