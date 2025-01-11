@@ -8,42 +8,41 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: var(--primary-font);
-    margin: 0;
-    padding: 0;
-    color: var(--primary-color);
-}
-
 /* Default styles for dark mode */
 :root {
-    --background-image: #000 url("../img/stars01.png") repeat top center;
-    --primary-color: #fff;
+    --background-image: rgb(0, 0, 0) url("../img/stars01.png") repeat top center;
+    --primary-color: rgb(255, 255, 255);
     --primary-font: 'Coda', sans-serif, arial;
     --secondary-font: 'Fira Code', sans-serif;
-    --navbar-box-shadow: 5px 5px 10px #fff;
-    --bg-navbar-opaque: #000;
+    --navbar-box-shadow: 5px 5px 10px rgb(255, 255, 255);
+    --bg-navbar-opaque: rgb(0, 0, 0);
     --bg-secondary: rgba(30, 35, 30, 0.5);
     --bg-buttons-hover: rgba(40, 45, 40, 0.7);
     --border-buttons: 1px solid grey;
-    --box-shadow-buttons-hover: 1px 1px 10px #fff;
+    --box-shadow-buttons-hover: 1px 1px 10px rgb(255, 255, 255);
+    --animmation-stars: move-twink-back 100s linear infinite;
 }
 
 /* Styles for light mode */
 [data-theme="light"] {
-    --background-image: #f5f5f7;
-    --primary-color: #1d1d1f;
+    --background-image: rgb(245, 245, 247) url("../img/banner-light.webp");
+    --primary-color: rgb(29, 29, 31);
     --navbar-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     --bg-navbar-opaque: rgba(255, 255, 255, 0.8);
     --bg-secondary: rgba(255, 255, 255, 0.9);
     --bg-buttons-hover: rgba(230, 230, 235, 0.9);
     --box-shadow-buttons-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
-    --border-buttons: 1px solid #e0e0e0;
+    --border-buttons: 1px solid rgb(224, 224, 224);
+    --animmation-stars: none;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Specific classes for light mode */
 [data-theme="light"] .proj-slide {
-    border: 1px solid #e0e0e0;
+    border: 1px solid rgb(224, 224, 224);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -58,7 +57,26 @@ body {
 
 [data-theme="light"] .navbar-opaque {
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Body styles - Starry effect */
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    background: var(--background-image);
+    animation: var(--animmation-stars);    
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
 }
 
 /* Navbar */
@@ -95,7 +113,7 @@ body {
 }
 
 #navbar ul li a:hover {
-    text-decoration: underline;
+    text-shadow: 1px 1px 1px var(--primary-color);
 }
 
 .options-container {
@@ -143,6 +161,7 @@ body {
 #welcome-section h3 {
     font-size: 1.5rem;
     font-family: monospace, 'Fira Code', arial;
+    min-height: 60px;
 }
 
 /* About-me  */
@@ -335,7 +354,7 @@ body {
     width: 90%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -345,15 +364,15 @@ body {
     padding: 12px;
     font-size: 1rem;
     font-weight: bold;
-    color: #fff;
-    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 123, 255);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: rgb(0, 86, 179);
 }
 
 /* Footer */
@@ -365,7 +384,11 @@ footer {
     align-items: center;
     margin-top: auto;
     padding: 50px 0;
+}
 
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .social-media {
@@ -378,66 +401,6 @@ footer {
 .social-media>a>img {
     width: 100px;
     height: 35px;
-}
-
-/* Starry effect */
-body {
-    background: var(--background-image);
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    -moz-animation: move-twink-back 100s linear infinite;
-    -ms-animation: move-twink-back 100s linear infinite;
-    -o-animation: move-twink-back 100s linear infinite;
-    -webkit-animation: move-twink-back 100s linear infinite;
-    animation: move-twink-back 100s linear infinite;
-    
-}
-
-@keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
-}
-
-@-webkit-keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
-}
-
-@-moz-keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
-}
-
-@-ms-keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
 }
 
 /* Media queries */

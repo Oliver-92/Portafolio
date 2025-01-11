@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!--Google Fonts-->
+    <meta name="description" content="Portfolio profesional de Ezequiel Oliver - Desarrollador Web y Analista de Datos">
+    <title>Portfolio - Ezequiel Oliver</title>
+
+    <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coda&family=Chonburi&family=Fira+Code&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coda&family=Chonburi&family=Fira+Code&display=swap&display=swap"
         rel="stylesheet">
+
     <!--CSS-->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -18,19 +22,19 @@
 
     <!-- Navbar -->
     <header>
-        <nav id="navbar" class="navbar-transparent">
+        <nav id="navbar" class="navbar-transparent" role="navigation">
             <ul>
-                <li><a href="#welcome-section" data-i18n="index">Inicio</a></li>
+                <li><a href="#welcome-section" data-i18n="index" aria-current="page">Inicio</a></li>
                 <li><a href="#about-me" data-i18n="about">Sobre Mi</a></li>
                 <li><a href="#projects" data-i18n="projects">Proyectos</a></li>
                 <li><a href="#contact" data-i18n="contact">Contacto</a></li>
             </ul>
         </nav>
         <div class="options-container">
-            <button id="languageToggle" class="language-btn btn">
+            <button id="languageToggle" class="language-btn btn" aria-label="Change language">
                 <span class="language-text">ENGLISH</span>
             </button>
-            <button id="toggle-theme" class="btn"></button>
+            <button id="toggle-theme" class="btn" aria-label="Change theme"></button>
         </div>
     </header>
 
@@ -41,7 +45,7 @@
     </section>
 
     <!--About me section-->
-    <section id="about-me">
+    <section id="about-me" aria-labelledby="aboutTitle">
         <h2 data-i18n="aboutTitle">Sobre mi</h2>
         <div id="about-me-slides">
             <div class="slide-text" data-i18n="aboutText">
@@ -52,7 +56,7 @@
                 como profesional en el campo de la tecnología.
             </div>
             <div class="slide-img">
-                <img src="./img/Avatar.webp" alt="" data-i18n-alt="avatarAlt">
+                <img src="./img/Avatar.webp" alt="" data-i18n-alt="avatarAlt" loading="lazy">
             </div>
         </div>
         <span class="skills-container">
@@ -77,23 +81,26 @@
     </section>
 
     <!-- Projects section -->
-    <section id="projects">
+    <section id="projects" aria-labelledby="projectsTitle">
         <h2 data-i18n="projectsTitle">Proyectos</h2>
 
         <!-- Buttons to switch between projects -->
-        <div id="projects-buttons">
-            <button id="developer-btn" data-i18n="webDevBtn" class="btn">Desarrollador Web</button>
-            <button id="data-analyst-btn" data-i18n="dataAnalystBtn" class="btn">Analista de Datos</button>
+        <div id="projects-buttons" role="tablist">
+            <button id="developer-btn" data-i18n="webDevBtn" class="btn" role="tab" aria-selected="true"
+                aria-controls="developer">Desarrollador Web</button>
+            <button id="data-analyst-btn" data-i18n="dataAnalystBtn" class="btn" role="tab" aria-selected="false"
+                aria-controls="data-analyst">Analista de Datos</button>
         </div>
 
         <div id="projects-slides">
             <!-- Developer section -->
-            <div id="developer" class="project-section">
+            <div id="developer" class="project-section" role="tabpanel" aria-labelledby="developer-btn">
 
                 <!-- card -->
                 <div class="proj-slide">
                     <h3 data-i18n="beverlyTrendsTitle"></h3>
-                    <img src="./img/beverly-trends.webp" data-i18n-alt="beverlyTrendsAlt" class="img-slide">
+                    <img src="./img/beverly-trends.webp" data-i18n-alt="beverlyTrendsAlt" class="img-slide"
+                        loading="lazy">
                     <p data-i18n="beverlyTrendsDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Beverly-Trends" target="_blank" class="btn">GitHub</a>
@@ -104,18 +111,22 @@
                 <!-- card -->
                 <div class="proj-slide">
                     <h3 data-i18n="beverlyIndumentariaTitle"></h3>
-                    <img src="./img/beverly-indumentaria.webp" data-i18n-alt="beverlyIndumentariaAlt" class="img-slide">
+                    <img src="./img/beverly-indumentaria.webp" data-i18n-alt="beverlyIndumentariaAlt" class="img-slide"
+                        loading="lazy">
                     <p data-i18n="beverlyIndumentariaDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Beverly-Indumentaria" target="_blank" class="btn">GitHub</a>
-                        <a href="https://oliver-92.github.io/Beverly-Indumentaria/" target="_blank" class="btn">Website</a>
+                        <a href="https://github.com/Oliver-92/Beverly-Indumentaria" target="_blank"
+                            class="btn">GitHub</a>
+                        <a href="https://oliver-92.github.io/Beverly-Indumentaria/" target="_blank"
+                            class="btn">Website</a>
                     </div>
                 </div>
 
                 <!-- card -->
                 <div class="proj-slide">
                     <h3 data-i18n="coffeeCornerTitle"></h3>
-                    <img src="./img/coffee-corner.webp" data-i18n-alt="coffeeCornerAlt" class="img-slide">
+                    <img src="./img/coffee-corner.webp" data-i18n-alt="coffeeCornerAlt" class="img-slide"
+                        loading="lazy">
                     <p data-i18n="coffeeCornerDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Coffee-Corner" target="_blank" class="btn">GitHub</a>
@@ -126,18 +137,20 @@
                 <!-- card -->
                 <div class="proj-slide">
                     <h3 data-i18n="pokemonAppTitle"></h3>
-                    <img src="./img/pokemon-search-app.webp" data-i18n-alt="pokemonAppAlt" class="img-slide">
+                    <img src="./img/pokemon-search-app.webp" data-i18n-alt="pokemonAppAlt" class="img-slide"
+                        loading="lazy">
                     <p data-i18n="pokemonAppDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Pokemon-Search-App" target="_blank" class="btn">GitHub</a>
-                        <a href="https://oliver-92.github.io/Pokemon-Search-App/" target="_blank" class="btn">Website</a>
+                        <a href="https://oliver-92.github.io/Pokemon-Search-App/" target="_blank"
+                            class="btn">Website</a>
                     </div>
                 </div>
 
                 <!-- card -->
                 <div class="proj-slide">
                     <h3 data-i18n="magazineTitle"></h3>
-                    <img src="./img/magazine.webp" data-i18n-alt="magazineAlt" class="img-slide">
+                    <img src="./img/magazine.webp" data-i18n-alt="magazineAlt" class="img-slide" loading="lazy">
                     <p data-i18n="magazineDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Magazine" target="_blank" class="btn">GitHub</a>
@@ -148,7 +161,8 @@
                 <!-- card -->
                 <div class="proj-slide">
                     <h3 data-i18n="catGalleryTitle"></h3>
-                    <img src="./img/photo-cat-gallery.webp" data-i18n-alt="catGalleryAlt" class="img-slide">
+                    <img src="./img/photo-cat-gallery.webp" data-i18n-alt="catGalleryAlt" class="img-slide"
+                        loading="lazy">
                     <p data-i18n="catGalleryDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Photo-cat-gallery" target="_blank" class="btn">GitHub</a>
@@ -163,10 +177,11 @@
                 <!-- card -->
                 <div class="proj-slide">
                     <h3 data-i18n="unlpTitle"></h3>
-                    <img src="./img/dasboard-unlp.webp" data-i18n-alt="unlpAlt" class="img-slide">
+                    <img src="./img/dasboard-unlp.webp" data-i18n-alt="unlpAlt" class="img-slide" loading="lazy">
                     <p data-i18n="unlpDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Relevamiento-Dependencias-UNLP" target="_blank" class="btn">GitHub</a>
+                        <a href="https://github.com/Oliver-92/Relevamiento-Dependencias-UNLP" target="_blank"
+                            class="btn">GitHub</a>
                         <a href="https://lookerstudio.google.com/reporting/3fad100c-9982-4980-95de-f5a8a6fdca57/page/a6w7D"
                             target="_blank" class="btn">Dashboard</a>
                     </div>
@@ -176,10 +191,11 @@
                 <div class="proj-slide">
                     <h3 data-i18n="covidEffectsTitle"></h3>
                     <img src="./img/dashboard-covid.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="covidEffectsAlt">
+                        data-i18n-alt="covidEffectsAlt" loading="lazy">
                     <p data-i18n="covidEffectsDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Efectos-Psicologicos-del-covid" target="_blank" class="btn">GitHub</a>
+                        <a href="https://github.com/Oliver-92/Efectos-Psicologicos-del-covid" target="_blank"
+                            class="btn">GitHub</a>
                         <a href="https://lookerstudio.google.com/reporting/e98523b8-1069-415d-9092-e9f59174e759/page/CnCvD"
                             target="_blank" class="btn">Dashboard</a>
                     </div>
@@ -189,11 +205,12 @@
                 <div class="proj-slide">
                     <h3 data-i18n="fintechSolutionsTitle"></h3>
                     <img src="./img/dashboard_fintech04.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="fintechSolutionsAlt">
+                        data-i18n-alt="fintechSolutionsAlt" loading="lazy">
                     <p data-i18n="fintechSolutionsDesc"></p>
                     <div class="btn-container">
                         <a href="https://github.com/Oliver-92/Fintech-Solutions" target="_blank" class="btn">GitHub</a>
-                        <a href="https://www.youtube.com/watch?v=7bFeY4MfLls" target="_blank" class="btn">Presentación</a>
+                        <a href="https://www.youtube.com/watch?v=7bFeY4MfLls" target="_blank"
+                            class="btn">Presentación</a>
                     </div>
                 </div>
 
@@ -201,11 +218,11 @@
                 <div class="proj-slide">
                     <h3 data-i18n="salesAnalysisTitle"></h3>
                     <img src="./img/dashboard-ventas.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="salesAnalysisAlt">
+                        data-i18n-alt="salesAnalysisAlt" loading="lazy">
                     <p data-i18n="salesAnalysisDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Data-Analytics-Analisis-de-ventas"
-                            target="_blank" class="btn">GitHub</a>
+                        <a href="https://github.com/Oliver-92/Data-Analytics-Analisis-de-ventas" target="_blank"
+                            class="btn">GitHub</a>
                         <a href="https://lookerstudio.google.com/reporting/d78ed57d-93ea-4a00-bcb3-48ed39f2e3b3/page/UOYoD"
                             target="_blank" class="btn">Dashboard</a>
                     </div>
@@ -215,10 +232,11 @@
                 <div class="proj-slide">
                     <h3 data-i18n="netflixAnalysisTitle"></h3>
                     <img src="./img/data-netflix.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="netflixAnalysisAlt">
+                        data-i18n-alt="netflixAnalysisAlt" loading="lazy">
                     <p data-i18n="netflixAnalysisDesc"></p>
                     <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Data-Analytics-Netflix" target="_blank" class="btn">GitHub</a>
+                        <a href="https://github.com/Oliver-92/Data-Analytics-Netflix" target="_blank"
+                            class="btn">GitHub</a>
                     </div>
                 </div>
 
@@ -226,7 +244,7 @@
                 <div class="proj-slide">
                     <h3 data-i18n="hrAnalysisTitle"></h3>
                     <img src="./img/dashboard-rrhh.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="hrAnalysisAlt">
+                        data-i18n-alt="hrAnalysisAlt" loading="lazy">
                     <p data-i18n="hrAnalysisDesc"></p>
                     <div class="btn-container">
                         <a href="https://lookerstudio.google.com/reporting/af4602c7-fffd-454a-bed1-c1e79a5d464d/page/OCMpD"
@@ -239,18 +257,19 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" aria-labelledby="contactTitle">
         <h2 data-i18n="contactTitle"></h2>
         <div class="contact-form">
             <form action="/submit_form" method="POST">
                 <label for="name" data-i18n="contactNameLabel"></label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required autocomplete="name" minlength="2" maxlength="50">
 
                 <label for="email" data-i18n="contactEmailLabel"></label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required autocomplete="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
                 <label for="comment" data-i18n="contactCommentLabel"></label>
-                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <textarea id="comment" name="comment" rows="4" required minlength="10" maxlength="500"></textarea>
 
                 <button type="submit" data-i18n="contactButton"></button>
             </form>
@@ -272,16 +291,17 @@
                         alt="Telegram-Badge">
                 </a>
             </span>
-            <p>Mail: ezequiel.oliver@live.com.ar</p>
+            <p>Mail: <a href="mailto:ezequiel.oliver@live.com.ar">ezequiel.oliver@live.com.ar</a></p>
         </footer>
 
     </section>
 
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/translations.js"></script>
-    <script src="./js/language.js"></script>
-    <script src="./js/theme.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typewriter-effect@2.19.0/dist/core.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/translations.js" defer></script>
+    <script src="./js/language.js" defer></script>
+    <script src="./js/theme.js" defer></script>
 
 </body>
 
