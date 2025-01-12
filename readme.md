@@ -2,7 +2,10 @@
 
 Portfolio web profesional y responsivo que muestra mis proyectos como desarrollador web y analista de datos. El sitio cuenta con modo oscuro/claro, soporte multiidioma y efectos visuales interactivos.
 
-![Portfolio Preview](./img/Portafolio.webp)
+<p align="center">
+  <img src="./img/Portafolio.webp" alt="Portfolio Preview" />
+</p>
+
 
 ## 🚀 Características
 
@@ -136,7 +139,7 @@ Las contribuciones son bienvenidas. Para cambios importantes, por favor abre un 
 - [Shields.io](https://shields.io/) por los badges de tecnologías
 - [Google Fonts](https://fonts.google.com/) por las fuentes utilizadas
 - [Freepik](https://www.freepik.es/) por las imágenes utilizadas (Background light mode)
-- [Formspree](https://formspree.io/) por el servicio de correo electrónica para el formulario de contacto
+- [Formspree](https://formspree.io/) por el servicio de correo electrónico para el formulario de contacto
 
 ---
 ⭐️ Si te gusta este proyecto, ¡no dudes en darle una estrella!
