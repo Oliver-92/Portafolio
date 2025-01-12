@@ -1,24 +1,25 @@
+// Function to toggle between light and dark mode
 const toggleButton = document.getElementById('toggle-theme');
 const body = document.body;
 
-// Verificar si el modo oscuro o claro está guardado en localStorage
+// Check if dark or light mode is saved in localStorage
 if (localStorage.getItem('theme') === 'light') {
     body.setAttribute('data-theme', 'light');
-    toggleButton.textContent = 'DARK MODE';  // Cambiar texto del botón
+    toggleButton.textContent = 'DARK MODE';
 } else {
-    body.setAttribute('data-theme', 'dark');  // Modo oscuro por defecto
-    toggleButton.textContent = 'LIGHT MODE';  // Cambiar texto del botón
+    body.setAttribute('data-theme', 'dark');
+    toggleButton.textContent = 'LIGHT MODE';
 }
 
-// Agregar un evento al botón para alternar entre los modos
+// Add an event to the button to switch between modes
 toggleButton.addEventListener('click', () => {
     if (body.getAttribute('data-theme') === 'dark') {
         body.setAttribute('data-theme', 'light');
-        toggleButton.textContent = 'DARK MODE';  // Cambiar texto del botón
-        localStorage.setItem('theme', 'light');  // Guardar la preferencia
+        toggleButton.textContent = 'DARK MODE';
+        localStorage.setItem('theme', 'light');
     } else {
         body.setAttribute('data-theme', 'dark');
-        toggleButton.textContent = 'LIGHT MODE';  // Cambiar texto del botón
-        localStorage.setItem('theme', 'dark');  // Guardar la preferencia
+        toggleButton.textContent = 'LIGHT MODE';
+        localStorage.setItem('theme', 'dark');
     }
 });

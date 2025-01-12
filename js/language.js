@@ -1,3 +1,5 @@
+// Function to change the language of the page
+
 let currentLang = 'es';
 
 function updateContent() {
@@ -8,7 +10,7 @@ function updateContent() {
         }
     });
 
-    // Actualizar los alt de las imágenes
+    // Update image alts
     document.querySelectorAll('[data-i18n-alt]').forEach(element => {
         const key = element.getAttribute('data-i18n-alt');
         if (translations[currentLang][key]) {
@@ -18,29 +20,20 @@ function updateContent() {
 }
 
 function changeLanguage() {
-    // Cambiar el idioma
     currentLang = currentLang === 'es' ? 'en' : 'es';
-    
-    // Actualizar el atributo lang del HTML
     document.documentElement.lang = currentLang;
-    
-    // Actualizar el texto del botón
     const buttonText = currentLang === 'es' ? 'ENGLISH' : 'ESPAÑOL';
     document.querySelector('.language-text').textContent = buttonText;
-
-    // Actualizar el contenido
     updateContent();
-
-    // Guardar la preferencia del usuario
     localStorage.setItem('preferredLanguage', currentLang);
 }
 
-// Evento para el botón de cambio de idioma
+// Event for language change button
 document.getElementById('languageToggle').addEventListener('click', changeLanguage);
 
-// Inicializar el contenido al cargar la página
+// Initialize content on page load
 document.addEventListener('DOMContentLoaded', () => {
-    // Cargar el idioma preferido si existe
+    // Load preferred language if it exists
     const savedLanguage = localStorage.getItem('preferredLanguage');
     if (savedLanguage) {
         currentLang = savedLanguage;
@@ -49,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.language-text').textContent = 'ESPAÑOL';
         }
     }
-    
-    // Cargar el contenido inicial
+
+    // Load initial content
     updateContent();
 });

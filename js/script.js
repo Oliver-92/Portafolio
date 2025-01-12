@@ -48,7 +48,7 @@ function getLanguage() {
 // Function to start the Typewriter
 function startTypewriter() {
     const currentLanguage = getLanguage();
-    const languageTexts = texts[currentLanguage] || texts['es']; // Fallback to Spanish
+    const languageTexts = texts[currentLanguage] || texts['es'];
 
     // Clear the existing Typewriter instance
     if (subtitle.typewriterInstance) {
@@ -70,7 +70,7 @@ function startTypewriter() {
     });
 
     typewriter.start();
-    subtitle.typewriterInstance = typewriter; // Store the instance for later control
+    subtitle.typewriterInstance = typewriter;
 }
 
 // Start Typewriter with the current language

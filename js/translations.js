@@ -1,3 +1,5 @@
+// Load initial content
+
 const translations = {
     es: {
         // Navbar
@@ -6,7 +8,7 @@ const translations = {
         projects: "Proyectos",
         contact: "Contacto",
 
-        // Títulos principales
+        // Main titles
         aboutTitle: "Sobre mi",
         projectsTitle: "Proyectos",
 
@@ -14,11 +16,11 @@ const translations = {
         aboutText: "Programador apasionado por el desarrollo web y el análisis de datos. Actualmente en búsqueda de oportunidades para aplicar y ampliar mis conocimientos en el mundo real. Poseo habilidades sólidas en lenguajes de programación como Python y JavaScript, así como un fuerte compromiso con la resolución de problemas y el aprendizaje continuo. Abierto a colaborar en proyectos desafiantes y crecer como profesional en el campo de la tecnología.",
         avatarAlt: "Foto de perfil",
 
-        // Botones de navegación
+        // Navigation buttons
         webDevBtn: "Desarrollador Web",
         dataAnalystBtn: "Analista de Datos",
 
-        // Proyectos Web
+        // Web Projects
         beverlyTrendsTitle: "Beverly Trends",
         beverlyTrendsAlt: "beverly-trends",
         beverlyTrendsDesc: "Página web funcional para una tienda de ropa que incluye un sistema de carrito de compras dinámico. | Bootstrap | HTML | CSS | JS |",
@@ -43,7 +45,7 @@ const translations = {
         catGalleryAlt: "photo-cat-gallery",
         catGalleryDesc: "Proyecto educativo de Front End | Galería de fotos | Realizado con HTML y CSS | Flexbox.",
 
-        // Proyectos Data
+        // Data Projects
         unlpTitle: "Relevamiento de Dependencias de la UNLP",
         unlpAlt: "dashboard-image",
         unlpDesc: "Proyecto personal de Data Analytics a partir de un relevamiento sobre unidades de desarrollo e investigación de la UNLP. EDA realizado con Python y sus librerías. Dashboard interactivo realizado con LookerStudio.",
@@ -68,7 +70,7 @@ const translations = {
         hrAnalysisAlt: "imagen del dashboard de análisis de RRHH",
         hrAnalysisDesc: "Dashboard interactivo sobre las características del personal según Departamento con datos de Google Analytics.",
 
-        // Formulario
+        // Form
 
         contactTitle: "Contacto",
         contactNameLabel: "Nombre:",

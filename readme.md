@@ -2,7 +2,7 @@
 
 Portfolio web profesional y responsivo que muestra mis proyectos como desarrollador web y analista de datos. El sitio cuenta con modo oscuro/claro, soporte multiidioma y efectos visuales interactivos.
 
-![Portfolio Preview](./img/portfolio-preview.webp)
+![Portfolio Preview](./img/Portafolio.webp)
 
 ## 🚀 Características
 
@@ -90,6 +90,7 @@ portfolio/
 ├── css/
 │   └── styles.css
 ├── js/
+│   ├── form.js
 │   ├── script.js
 │   ├── translations.js
 │   ├── language.js
