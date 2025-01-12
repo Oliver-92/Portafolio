@@ -10,6 +10,7 @@ Portfolio web profesional y responsivo que muestra mis proyectos como desarrolla
 - **Modo Oscuro/Claro**: Cambio de tema visual según preferencia del usuario
 - **Multiidioma**: Soporte para español e inglés
 - **Efectos Visuales**: Animaciones suaves y efectos interactivos
+- **Formulario de contacto dinámico:** Envía los datos sin recargar la página, mostrando un mensaje de éxito en el idioma configurado.
 - **Secciones Organizadas**: 
   - Página de inicio con efecto de escritura
   - Sobre mí con habilidades técnicas
@@ -18,9 +19,10 @@ Portfolio web profesional y responsivo que muestra mis proyectos como desarrolla
 
 ## 🛠️ Tecnologías Utilizadas
 
-- HTML5
-- CSS3 (Variables CSS, Flexbox, Animaciones)
-- JavaScript (Vanilla)
+- **HTML5:** Estructuración del contenido del sitio.
+- **CSS3:** Diseño visual (Variables CSS, Flexbox, Animaciones)
+- **JavaScript (Vanilla):** Funcionalidad dinámica, como validaciones, animaciones y manejo del envío de formularios.
+- **GitHub Pages:** Hosting del proyecto.
 - [Typewriter Effect](https://github.com/tameemsafi/typewriterjs)
 
 ## 📥 Instalación
@@ -86,15 +88,15 @@ const translations = {
 
 ```
 portfolio/
-├── index.html
+├── index.html           # Página principal del portafolio
 ├── css/
-│   └── styles.css
+│   └── styles.css       # Estilos principales del sitio
 ├── js/
-│   ├── form.js
-│   ├── script.js
-│   ├── translations.js
-│   ├── language.js
-│   └── theme.js
+│   ├── form.js          # Gestión del formulario
+│   ├── script.js        # Funcionalidad del sitio
+│   ├── translations.js  # Traducciones del sitio
+│   ├── language.js      # Funciones de cambio de idioma
+│   └── theme.js         # Funciones de cambio de tema
 └── img/
     └── ...
 ```
@@ -134,6 +136,7 @@ Las contribuciones son bienvenidas. Para cambios importantes, por favor abre un 
 - [Shields.io](https://shields.io/) por los badges de tecnologías
 - [Google Fonts](https://fonts.google.com/) por las fuentes utilizadas
 - [Freepik](https://www.freepik.es/) por las imágenes utilizadas (Background light mode)
+- [Formspree](https://formspree.io/) por el servicio de correo electrónica para el formulario de contacto
 
 ---
 ⭐️ Si te gusta este proyecto, ¡no dudes en darle una estrella!
