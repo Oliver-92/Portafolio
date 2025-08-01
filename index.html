@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio profesional de Ezequiel Oliver - Desarrollador Web y Analista de Datos">
-    <title>Portfolio - Ezequiel Oliver</title>
+    <title>Portafolio - Ezequiel Oliver</title>
 
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +66,14 @@
                 alt="logo-css">
             <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
                 alt="logo-js">
+            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                alt="logo-react">
+            <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                alt="logo-tailwind">
+            <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+                alt="logo-bootstrap">
+            <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E"
+                alt="logo-vite">
             <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
                 alt="logo-python">
             <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"
@@ -74,14 +82,6 @@
                 alt="logo-mysql">
             <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"
                 alt="logo-sqlite">
-            <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
-                alt="logo-matplotlib">
-            <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"
-                alt="logo-numpy">
-            <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"
-                alt="logo-pandas">
-            <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"
-                alt="logo-scikit-learn">
             <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"
                 alt="logo-flask">
         </span>
@@ -91,17 +91,47 @@
     <section id="projects" aria-labelledby="projectsTitle">
         <h2 data-i18n="projectsTitle">Proyectos</h2>
 
-        <!-- Buttons to switch between projects -->
-        <div id="projects-buttons" role="tablist">
-            <button id="developer-btn" data-i18n="webDevBtn" class="btn" role="tab" aria-selected="true"
-                aria-controls="developer">Desarrollador Web</button>
-            <button id="data-analyst-btn" data-i18n="dataAnalystBtn" class="btn" role="tab" aria-selected="false"
-                aria-controls="data-analyst">Analista de Datos</button>
-        </div>
-
         <div id="projects-slides">
             <!-- Developer section -->
             <div id="developer" class="project-section" role="tabpanel" aria-labelledby="developer-btn">
+
+                <!-- card -->
+                <div class="proj-slide">
+                    <h3 data-i18n="nevermindShopTitle"></h3>
+                    <img src="./img/nevermind-shop.webp" data-i18n-alt="nevermindShopAlt" class="img-slide"
+                        loading="lazy">
+                    <p data-i18n="nevermindShopDesc"></p>
+                    <div class="btn-container">
+                        <a href="https://github.com/Oliver-92/React-Ecommerce-TP-Final" target="_blank"
+                            class="btn">GitHub</a>
+                        <a href="https://react-ecommerce-final-project.netlify.app/" target="_blank"
+                            class="btn">Website</a>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="proj-slide">
+                    <h3 data-i18n="converterToWebpTitle"></h3>
+                    <img src="./img/convertidor-webp.webp" data-i18n-alt="converterToWebpAlt" class="img-slide"
+                        loading="lazy">
+                    <p data-i18n="converterToWebpDesc"></p>
+                    <div class="btn-container">
+                        <a href="https://github.com/Oliver-92/Convertidor-Webp" target="_blank" class="btn">GitHub</a>
+                        <a href="https://oliver-92.github.io/Convertidor-Webp/" target="_blank" class="btn">Website</a>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="proj-slide">
+                    <h3 data-i18n="magicQuestTitle"></h3>
+                    <img src="./img/magic-quest.webp" data-i18n-alt="magicQuestAlt" class="img-slide" loading="lazy">
+                    <p data-i18n="magicQuestDesc"></p>
+                    <div class="btn-container">
+                        <a href="https://github.com/Oliver-92/Landing-React-Magic-Quest" target="_blank"
+                            class="btn">GitHub</a>
+                        <a href="https://magic-quest-react-landing.netlify.app/" target="_blank" class="btn">Website</a>
+                    </div>
+                </div>
 
                 <!-- card -->
                 <div class="proj-slide">
@@ -141,126 +171,7 @@
                     </div>
                 </div>
 
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="pokemonAppTitle"></h3>
-                    <img src="./img/pokemon-search-app.webp" data-i18n-alt="pokemonAppAlt" class="img-slide"
-                        loading="lazy">
-                    <p data-i18n="pokemonAppDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Pokemon-Search-App" target="_blank" class="btn">GitHub</a>
-                        <a href="https://oliver-92.github.io/Pokemon-Search-App/" target="_blank"
-                            class="btn">Website</a>
-                    </div>
-                </div>
-
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="magazineTitle"></h3>
-                    <img src="./img/magazine.webp" data-i18n-alt="magazineAlt" class="img-slide" loading="lazy">
-                    <p data-i18n="magazineDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Magazine" target="_blank" class="btn">GitHub</a>
-                        <a href="https://oliver-92.github.io/Magazine/" target="_blank" class="btn">Website</a>
-                    </div>
-                </div>
-
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="catGalleryTitle"></h3>
-                    <img src="./img/photo-cat-gallery.webp" data-i18n-alt="catGalleryAlt" class="img-slide"
-                        loading="lazy">
-                    <p data-i18n="catGalleryDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Photo-cat-gallery" target="_blank" class="btn">GitHub</a>
-                        <a href="https://oliver-92.github.io/Photo-cat-gallery/" target="_blank" class="btn">Website</a>
-                    </div>
-                </div>
             </div>
-
-            <!-- Data section -->
-            <div id="data-analyst" class="project-section">
-
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="unlpTitle"></h3>
-                    <img src="./img/dasboard-unlp.webp" data-i18n-alt="unlpAlt" class="img-slide" loading="lazy">
-                    <p data-i18n="unlpDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Relevamiento-Dependencias-UNLP" target="_blank"
-                            class="btn">GitHub</a>
-                        <a href="https://lookerstudio.google.com/reporting/3fad100c-9982-4980-95de-f5a8a6fdca57/page/a6w7D"
-                            target="_blank" class="btn">Dashboard</a>
-                    </div>
-                </div>
-
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="covidEffectsTitle"></h3>
-                    <img src="./img/dashboard-covid.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="covidEffectsAlt" loading="lazy">
-                    <p data-i18n="covidEffectsDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Efectos-Psicologicos-del-covid" target="_blank"
-                            class="btn">GitHub</a>
-                        <a href="https://lookerstudio.google.com/reporting/e98523b8-1069-415d-9092-e9f59174e759/page/CnCvD"
-                            target="_blank" class="btn">Dashboard</a>
-                    </div>
-                </div>
-
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="fintechSolutionsTitle"></h3>
-                    <img src="./img/dashboard_fintech04.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="fintechSolutionsAlt" loading="lazy">
-                    <p data-i18n="fintechSolutionsDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Fintech-Solutions" target="_blank" class="btn">GitHub</a>
-                        <a href="https://www.youtube.com/watch?v=7bFeY4MfLls" target="_blank"
-                            class="btn">Presentación</a>
-                    </div>
-                </div>
-
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="salesAnalysisTitle"></h3>
-                    <img src="./img/dashboard-ventas.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="salesAnalysisAlt" loading="lazy">
-                    <p data-i18n="salesAnalysisDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Data-Analytics-Analisis-de-ventas" target="_blank"
-                            class="btn">GitHub</a>
-                        <a href="https://lookerstudio.google.com/reporting/d78ed57d-93ea-4a00-bcb3-48ed39f2e3b3/page/UOYoD"
-                            target="_blank" class="btn">Dashboard</a>
-                    </div>
-                </div>
-
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="netflixAnalysisTitle"></h3>
-                    <img src="./img/data-netflix.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="netflixAnalysisAlt" loading="lazy">
-                    <p data-i18n="netflixAnalysisDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://github.com/Oliver-92/Data-Analytics-Netflix" target="_blank"
-                            class="btn">GitHub</a>
-                    </div>
-                </div>
-
-                <!-- card -->
-                <div class="proj-slide">
-                    <h3 data-i18n="hrAnalysisTitle"></h3>
-                    <img src="./img/dashboard-rrhh.webp" alt="dashboard-image" class="img-slide"
-                        data-i18n-alt="hrAnalysisAlt" loading="lazy">
-                    <p data-i18n="hrAnalysisDesc"></p>
-                    <div class="btn-container">
-                        <a href="https://lookerstudio.google.com/reporting/af4602c7-fffd-454a-bed1-c1e79a5d464d/page/OCMpD"
-                            target="_blank" class="btn">Dashboard</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </section>
 
     <!-- Contact Section -->

@@ -13,14 +13,22 @@ const translations = {
         projectsTitle: "Proyectos",
 
         // Sección About
-        aboutText: "Programador apasionado por el desarrollo web y el análisis de datos. Actualmente en búsqueda de oportunidades para aplicar y ampliar mis conocimientos en el mundo real. Poseo habilidades sólidas en lenguajes de programación como Python y JavaScript, así como un fuerte compromiso con la resolución de problemas y el aprendizaje continuo. Abierto a colaborar en proyectos desafiantes y crecer como profesional en el campo de la tecnología.",
+        aboutText: "Programador apasionado por el desarrollo web orientado al Frontend. Actualmente en búsqueda de oportunidades para aplicar y ampliar mis conocimientos en el mundo real. Poseo habilidades sólidas en HTML, CSS, JavaScript y React, así como un fuerte compromiso con la resolución de problemas y el aprendizaje continuo. Abierto a colaborar en proyectos desafiantes y crecer como profesional en el campo de la tecnología.",
         avatarAlt: "Foto de perfil",
 
-        // Navigation buttons
-        webDevBtn: "Desarrollador Web",
-        dataAnalystBtn: "Analista de Datos",
-
         // Web Projects
+        nevermindShopTitle: "Nevermind Shop",
+        nevermindShopAlt: "nevermind-shop",
+        nevermindShopDesc: "E-commerce desarrollado con React, Vite y Tailwind como proyecto final de la cursada de React. Incluye un CRUD completo de los productos y validación de usuario con Firebase. Arquitectura Atomic Design.",
+
+        converterToWebpTitle: "Convertidor a WebP",
+        converterToWebpAlt: "converter-to-webp",
+        converterToWebpDesc: "Convertidor de imágenes a formato WebP que permite a los usuarios seleccionar varias imágenes, ver una vista previa selección, convertirlas a WebP y descargarlas en un archivo ZIP. Todo esto sin necesidad de un backend, utilizando solo HTML, CSS y JavaScript.",
+
+        magicQuestTitle: "Magic Quest",
+        magicQuestAlt: "magic-quest",
+        magicQuestDesc: "Landing page desarrollada como parte del curso de React con Vite de Juan Ortiz (Udemy). El sitio presenta una interfaz moderna y animada para un juego ficticio de aventuras mágicas. React | Tailwind | Framer Motion",
+
         beverlyTrendsTitle: "Beverly Trends",
         beverlyTrendsAlt: "beverly-trends",
         beverlyTrendsDesc: "Página web funcional para una tienda de ropa que incluye un sistema de carrito de compras dinámico. | Bootstrap | HTML | CSS | JS |",
@@ -32,43 +40,6 @@ const translations = {
         coffeeCornerTitle: "Coffee Corner",
         coffeeCornerAlt: "coffee-corner",
         coffeeCornerDesc: "Proyecto educativo de Back End. CRUD realizado con Python, Flask y MySQL a partir de un Front sencillo con HTML y CSS.",
-
-        pokemonAppTitle: "Pokemon Search App",
-        pokemonAppAlt: "pokemon-search-app",
-        pokemonAppDesc: "Proyecto educativo de JavaScript (DOM-Fetch) | Pokemon Search App | Realizado con HTML, CSS y JS | Proyecto final de certificación javascript. | freecodecamp.org",
-
-        magazineTitle: "Magazine",
-        magazineAlt: "magazine",
-        magazineDesc: "Proyecto educativo de Front End | Revista | Realizado con HTML y CSS | Grid.",
-
-        catGalleryTitle: "Photo cat gallery",
-        catGalleryAlt: "photo-cat-gallery",
-        catGalleryDesc: "Proyecto educativo de Front End | Galería de fotos | Realizado con HTML y CSS | Flexbox.",
-
-        // Data Projects
-        unlpTitle: "Relevamiento de Dependencias de la UNLP",
-        unlpAlt: "dashboard-image",
-        unlpDesc: "Proyecto personal de Data Analytics a partir de un relevamiento sobre unidades de desarrollo e investigación de la UNLP. EDA realizado con Python y sus librerías. Dashboard interactivo realizado con LookerStudio.",
-
-        covidEffectsTitle: "Efectos psicológicos del Covid",
-        covidEffectsAlt: "imagen del dashboard sobre efectos psicológicos del Covid",
-        covidEffectsDesc: "EDA realizado con Python (Pandas) sobre un conjunto de datos resultado de una encuesta sobre la pandemia de COVID-19. | Visualizaciones con Seaborn y Matplotlib | Modelos de ML con Scikit-Learn | Dashboard con LookerStudio.",
-
-        fintechSolutionsTitle: "Fintech Solutions",
-        fintechSolutionsAlt: "imagen del dashboard de Fintech Solutions",
-        fintechSolutionsDesc: "Proyecto colaborativo en No Country. Sistema de predicción de fraude en transacciones financieras con modelo de Machine Learning.",
-
-        salesAnalysisTitle: "Análisis de ventas",
-        salesAnalysisAlt: "imagen del dashboard de análisis de ventas",
-        salesAnalysisDesc: "EDA realizado con Python y SQLite sobre 3 tablas (vendedores, artículos y operaciones) | Visualizaciones con Matplotlib y Seaborn | Dashboard con LookerStudio.",
-
-        netflixAnalysisTitle: "Análisis de datos - Netflix",
-        netflixAnalysisAlt: "imagen del análisis de datos de Netflix",
-        netflixAnalysisDesc: "Proyecto educativo | Conexión a BBDD con SQLite | Análisis y visualización de datos con Python (Pandas | Seaborn | Matplotlib).",
-
-        hrAnalysisTitle: "Análisis de RRHH",
-        hrAnalysisAlt: "imagen del dashboard de análisis de RRHH",
-        hrAnalysisDesc: "Dashboard interactivo sobre las características del personal según Departamento con datos de Google Analytics.",
 
         // Form
 
@@ -92,14 +63,22 @@ const translations = {
         projectsTitle: "Projects",
 
         // About Section
-        aboutText: "Passionate programmer for web development and data analysis. Currently seeking opportunities to apply and expand my knowledge in the real world. I possess strong skills in programming languages such as Python and JavaScript, as well as a strong commitment to problem-solving and continuous learning. Open to collaborating on challenging projects and growing as a professional in the technology field.",
+        aboutText: "Passionate programmer for web development and data analysis. Currently seeking opportunities to apply and expand my knowledge in the real world. I possess strong skills in HTML, CSS, JavaScript and React, as well as a strong commitment to problem-solving and continuous learning. Open to collaborating on challenging projects and growing as a professional in the technology field.",
         avatarAlt: "Profile picture",
 
-        // Navigation buttons
-        webDevBtn: "Web Developer",
-        dataAnalystBtn: "Data Analyst",
-
         // Web Projects
+        nevermindShopTitle: "Nevermind Shop",
+        nevermindShopAlt: "nevermind-shop",
+        nevermindShopDesc: "E-commerce developed with React, Vite, and Tailwind as the final project of the React course. It includes a complete CRUD of products and user validation with Firebase. Atomic Design architecture.",
+
+        converterToWebpTitle: "WebP Converter",
+        converterToWebpAlt: "converter-to-webp",
+        converterToWebpDesc: "Image converter to WebP format that allows users to select multiple images, preview the selection, convert them to WebP, and download them in a ZIP file. All this without the need for a backend, using only HTML, CSS, and JavaScript.",
+
+        magicQuestTitle: "Magic Quest",
+        magicQuestAlt: "magic-quest",
+        magicQuestDesc: "Landing page developed as part of the React with Vite course by Juan Ortiz (Udemy). The site features a modern and animated interface for a fictional magical adventure game. React | Tailwind | Framer Motion",
+
         beverlyTrendsTitle: "Beverly Trends",
         beverlyTrendsAlt: "beverly-trends",
         beverlyTrendsDesc: "Functional website for a clothing store featuring a dynamic shopping cart system. | Bootstrap | HTML | CSS | JS |",
@@ -112,42 +91,9 @@ const translations = {
         coffeeCornerAlt: "coffee-corner",
         coffeeCornerDesc: "Back End educational project. CRUD made with Python, Flask and MySQL from a simple Front with HTML and CSS.",
 
-        pokemonAppTitle: "Pokemon Search App",
-        pokemonAppAlt: "pokemon-search-app",
-        pokemonAppDesc: "JavaScript educational project (DOM-Fetch) | Pokemon Search App | Made with HTML, CSS and JS | JavaScript certification final project. | freecodecamp.org",
-
-        magazineTitle: "Magazine",
-        magazineAlt: "magazine",
-        magazineDesc: "Front End educational project | Magazine | Made with HTML and CSS | Grid.",
-
         catGalleryTitle: "Photo cat gallery",
         catGalleryAlt: "photo-cat-gallery",
         catGalleryDesc: "Front End educational project | Photo gallery | Made with HTML and CSS | Flexbox.",
-
-        // Data Projects
-        unlpTitle: "UNLP Dependencies Survey",
-        unlpAlt: "dashboard-image",
-        unlpDesc: "Personal Data Analytics project based on a survey of UNLP development and research units. EDA performed with Python and its libraries. Interactive Dashboard made with LookerStudio.",
-
-        covidEffectsTitle: "Psychological Effects of Covid",
-        covidEffectsAlt: "dashboard image about psychological effects of Covid",
-        covidEffectsDesc: "EDA performed with Python (Pandas) on a dataset resulting from a survey about the COVID-19 pandemic. | Visualizations with Seaborn and Matplotlib | ML models with Scikit-Learn | Dashboard with LookerStudio.",
-
-        fintechSolutionsTitle: "Fintech Solutions",
-        fintechSolutionsAlt: "dashboard image of Fintech Solutions",
-        fintechSolutionsDesc: "Collaborative project in No Country. Fraud prediction system in financial transactions using a Machine Learning model.",
-
-        salesAnalysisTitle: "Sales Analysis",
-        salesAnalysisAlt: "dashboard image of sales analysis",
-        salesAnalysisDesc: "EDA performed with Python and SQLite on 3 tables (sellers, items, and transactions) | Visualizations with Matplotlib and Seaborn | Dashboard with LookerStudio.",
-
-        netflixAnalysisTitle: "Data Analysis - Netflix",
-        netflixAnalysisAlt: "image of Netflix data analysis",
-        netflixAnalysisDesc: "Educational project | Database connection with SQLite | Data analysis and visualization with Python (Pandas | Seaborn | Matplotlib).",
-
-        hrAnalysisTitle: "HR Analysis",
-        hrAnalysisAlt: "image of HR analysis dashboard",
-        hrAnalysisDesc: "Interactive dashboard on staff characteristics by department using Google Analytics data.",
 
         // Form
         contactTitle: "Contact",

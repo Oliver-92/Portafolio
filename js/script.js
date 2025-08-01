@@ -12,30 +12,17 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
-// Switch between sections
-document.getElementById('developer-btn').addEventListener('click', function () {
-    document.getElementById('developer').style.display = 'flex';
-    document.getElementById('data-analyst').style.display = 'none';
-});
-
-document.getElementById('data-analyst-btn').addEventListener('click', function () {
-    document.getElementById('developer').style.display = 'none';
-    document.getElementById('data-analyst').style.display = 'flex';
-});
-
-
 // Generate subtitle with Typewriter
 const subtitle = document.getElementById('subtitle');
 
 // Texts for Typewriter in both languages
 const texts = {
     es: [
-        '< Desarrollador Web /> && < Analista de Datos />',
+        '< Desarrollador Web - Frontend />',
         'Apasionado por el aprendizaje continuo'
     ],
     en: [
-        '< Web Developer /> && < Data Analyst />',
+        '< Web Developer - Frontend />',
         'Passionate about continuous learning'
     ]
 };

@@ -225,10 +225,10 @@ body {
     padding: 0 1rem;
 }
 
-.skills-container img {
+/* .skills-container img {
     width: clamp(80px, 10vw, 100px);
     height: auto;
-}
+} */
 
 /* Projects */
 #projects {
