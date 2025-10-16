@@ -25,21 +25,21 @@ const translations = {
         converterToWebpAlt: "converter-to-webp",
         converterToWebpDesc: "Convertidor de imágenes a formato WebP que permite a los usuarios seleccionar varias imágenes, ver una vista previa selección, convertirlas a WebP y descargarlas en un archivo ZIP. Todo esto sin necesidad de un backend, utilizando solo HTML, CSS y JavaScript.",
 
-        magicQuestTitle: "Magic Quest",
-        magicQuestAlt: "magic-quest",
-        magicQuestDesc: "Landing page desarrollada como parte del curso de React con Vite de Juan Ortiz (Udemy). El sitio presenta una interfaz moderna y animada para un juego ficticio de aventuras mágicas. React | Tailwind | Framer Motion",
+        weatherAppTitle: "App Clima",
+        weatherAppAlt: "weather-app",
+        weatherAppDesc: "Una aplicación meteorológica que permite a los usuarios buscar el tiempo en una ciudad específica y ver los resultados en una interfaz moderna y animada. | React | CSS | JS | API Open-Meteo | Arquitectura Atomic Design.",
 
         beverlyTrendsTitle: "Beverly Trends",
         beverlyTrendsAlt: "beverly-trends",
         beverlyTrendsDesc: "Página web funcional para una tienda de ropa que incluye un sistema de carrito de compras dinámico. | Bootstrap | HTML | CSS | JS |",
 
-        beverlyIndumentariaTitle: "Beverly Indumentaria",
-        beverlyIndumentariaAlt: "beverly-indumentaria",
-        beverlyIndumentariaDesc: "Página web funcional para una tienda de ropa que incluye un sistema de carrito de compras dinámico. | HTML | CSS | JS | Bootstrap |",
+        digitalBankTitle: "Digital Bank",
+        digitalBankAlt: "digital-bank",
+        digitalBankDesc: "Landing page de una entidad bancaria con una interfaz moderna y responsiva, desarrollada con React y estilizada con CSS.",
 
-        coffeeCornerTitle: "Coffee Corner",
-        coffeeCornerAlt: "coffee-corner",
-        coffeeCornerDesc: "Proyecto educativo de Back End. CRUD realizado con Python, Flask y MySQL a partir de un Front sencillo con HTML y CSS.",
+        productListTitle: "Lista de Productos con carrito",
+        productListAlt: "product-list",
+        productListDesc: "Landing page que muestra una lista de productos con un carrito de compras dinámico. Desarrollada con React y estilizada con CSS. Arquitectura Atomic Design.",
 
         // Form
 
@@ -75,25 +75,21 @@ const translations = {
         converterToWebpAlt: "converter-to-webp",
         converterToWebpDesc: "Image converter to WebP format that allows users to select multiple images, preview the selection, convert them to WebP, and download them in a ZIP file. All this without the need for a backend, using only HTML, CSS, and JavaScript.",
 
-        magicQuestTitle: "Magic Quest",
-        magicQuestAlt: "magic-quest",
-        magicQuestDesc: "Landing page developed as part of the React with Vite course by Juan Ortiz (Udemy). The site features a modern and animated interface for a fictional magical adventure game. React | Tailwind | Framer Motion",
+        weatherAppTitle: "Weather App",
+        weatherAppAlt: "weather-app",
+        weatherAppDesc: "A weather app that allows users to search for the weather in a specific city and view the results in a modern and animated interface. | React | CSS | JS | API Open-Meteo | Atomic Design architecture.",
 
         beverlyTrendsTitle: "Beverly Trends",
         beverlyTrendsAlt: "beverly-trends",
         beverlyTrendsDesc: "Functional website for a clothing store featuring a dynamic shopping cart system. | Bootstrap | HTML | CSS | JS |",
 
-        beverlyIndumentariaTitle: "Beverly Indumentaria",
-        beverlyIndumentariaAlt: "beverly-indumentaria",
-        beverlyIndumentariaDesc: "Functional website for a clothing store that includes a dynamic shopping cart system. | HTML | CSS | JS | Bootstrap |",
+        digitalBankTitle: "Digital Bank",
+        digitalBankAlt: "digital-bank",
+        digitalBankDesc: "Landing page of a banking institution with a modern and responsive interface, developed with React and styled with CSS.",
 
-        coffeeCornerTitle: "Coffee Corner",
-        coffeeCornerAlt: "coffee-corner",
-        coffeeCornerDesc: "Back End educational project. CRUD made with Python, Flask and MySQL from a simple Front with HTML and CSS.",
-
-        catGalleryTitle: "Photo cat gallery",
-        catGalleryAlt: "photo-cat-gallery",
-        catGalleryDesc: "Front End educational project | Photo gallery | Made with HTML and CSS | Flexbox.",
+        productListTitle: "Product List",
+        productListAlt: "product-list",
+        productListDesc: "Landing page with a product list and a dynamic shopping cart. Developed with React and styled with CSS. Atomic Design architecture.",
 
         // Form
         contactTitle: "Contact",

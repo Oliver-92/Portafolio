@@ -3,7 +3,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     // Avoid default sending and redirection
     e.preventDefault();
 
-    // Obtén el formulario
+    // Get the form
     const form = e.target;
     // Collect form data
     const formData = new FormData(form);
