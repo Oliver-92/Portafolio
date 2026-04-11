@@ -50,5 +50,5 @@ export function SubtitleTypewriter() {
         };
     }, [lang]);
 
-    return <h3 className="font-mono font-semibold text-xl" > <span ref={ref} /> </h3>;
+    return <h3 className="font-mono font-semibold text-lg sm:text-xl min-h-14 text-center" > <span ref={ref} /> </h3>;
 }

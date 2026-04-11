@@ -36,7 +36,7 @@ html {
 
 /* Styles for light mode */
 [data-theme="light"] {
-  --background-image: rgb(245, 245, 247) url("./assets/banner-light.webp");
+  --background-image: rgba(245, 245, 247) url("./assets/banner-light.webp");
   --primary-color: rgb(29, 29, 31);
   --navbar-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   --bg-navbar-opaque: rgba(255, 255, 255, 0.8);

@@ -1,10 +1,11 @@
+import SectionLayout from "../molecules/SectionLayout";
 import { SubtitleTypewriter } from "../molecules/TypeWriter";
 
 export default function Hero() {
     return (
-        <section className="flex flex-col justify-center items-center text-center h-screen gap-20">
-            <h1 className="font-mono text-7xl tracking-[1rem]">EZEQUIEL OLIVER</h1>
+        <SectionLayout id="index" className="justify-center">
+            <h1 className="font-mono text-5xl sm:text-7xl text-center tracking-[0.75rem] sm:tracking-[1rem]">EZEQUIEL OLIVER</h1>
             <SubtitleTypewriter />
-        </section>
+        </SectionLayout>
     )
 }
