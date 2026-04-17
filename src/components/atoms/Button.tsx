@@ -4,18 +4,20 @@ export default function Button({
     onClick,
     children,
     className,
+    icon,
 }: {
-    id: string;
+    id?: string;
     ariaLabel: string;
     onClick?: () => void;
     children?: React.ReactNode;
     className?: string;
+    icon?: React.ReactNode;
 }) {
     return (
         <button
             id={id}
             className={`cursor-pointer text-(--primary-color)
-                text-xs sm:text-base 
+                text-xs sm:text-sm 
                 bg-(--bg-secondary) [border:var(--border-buttons)] 
                 rounded-(--border-radius) transition-all 
                 duration-(--transition-speed) ease 
@@ -25,6 +27,7 @@ export default function Button({
             aria-label={ariaLabel}
             onClick={onClick}
         >
+            {icon}
             {children}
         </button>
     );

@@ -1,11 +1,25 @@
+import { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageProvider.js";
 import { translations } from "../../utils/translations.js";
 
 export default function Navbar() {
     const { lang } = useLanguage();
-    const t = translations[lang]
+    const t = translations[lang];
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 10);
+        };
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <nav className="fixed text-xs sm:text-base top-0 w-full h-12 sm:h-16 p-4 [box-shadow:var(--navbar-box-shadow)] z-1 transition-colors duration-(--transition-speed) ease" role="navigation">
+        <nav
+            className={`fixed text-xs sm:text-base top-0 w-full h-12 sm:h-16 p-4 z-1 transition-all duration-(--transition-speed) ease navbar-opaque ${scrolled ? "scrolled" : ""}`}
+            role="navigation"
+        >
             <ul className="flex justify-start md:justify-center items-center gap-2.5 md:gap-5 list-none">
                 <li><a
                     className="text-decoration-none text-(--primary-color) hover:[text-shadow:1px_1px_1px_var(--primary-color)]"
@@ -29,5 +43,5 @@ export default function Navbar() {
                 >{t.contact}</a></li>
             </ul>
         </nav>
-    )
+    );
 }
