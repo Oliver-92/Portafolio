@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed text-xs sm:text-base top-0 w-full h-12 sm:h-16 p-4 z-1 box-shadow-(--navbar-box-shadow) transition-all duration-(--transition-speed) ease navbar-opaque ${scrolled ? "scrolled" : ""}`}
+            className={`fixed text-xs sm:text-base top-0 w-full h-12 sm:h-16 p-4 z-1 transition-all duration-(--transition-speed) ease navbar-opaque ${scrolled ? "scrolled" : ""}`}
             role="navigation"
         >
             <ul className="flex justify-start md:justify-center items-center gap-2.5 md:gap-5 list-none">
