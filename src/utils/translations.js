@@ -43,6 +43,15 @@ export const translations = {
             title: "Lista de Productos con carrito",
             desc: "Landing page que muestra una lista de productos con un carrito de compras dinámico. Desarrollada con React y estilizada con CSS. Arquitectura Atomic Design.",
         },
+
+        // Contact section
+        contactTitle: "Contacto",
+        name: "Nombre",
+        email: "Email",
+        comment: "Comentario",
+        send: "Enviar",
+        formMessage: "Mensaje enviado correctamente",
+        errorMessage: "Hubo un error al enviar el mensaje",
     },
 
     en: {
@@ -89,5 +98,14 @@ export const translations = {
             title: "Product List",
             desc: "Landing page that shows a list of products with a dynamic shopping cart. Developed with React and styled with CSS. Atomic Design architecture.",
         },
+
+        // Contact section
+        contactTitle: "Contact",
+        name: "Name",
+        email: "Email",
+        comment: "Comment",
+        send: "Send",
+        formMessage: "Message sent successfully",
+        errorMessage: "There was an error sending the message",
     }
 }

@@ -44,7 +44,7 @@ html {
   --bg-secondary: rgba(255, 255, 255, 0.9);
   --bg-buttons-hover: rgba(230, 230, 235, 0.9);
   --box-shadow-buttons-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --border-buttons: 1px solid rgb(224, 224, 224);
+  --border-buttons: 1px solid rgba(36, 35, 35, 0.26);
   --animmation-stars: none;
 }
 
