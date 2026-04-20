@@ -3,6 +3,7 @@ import ContactForm from "../molecules/ContactForm";
 import SectionTitle from "../atoms/SectionTitle";
 import { useLanguage } from "../../context/LanguageProvider";
 import { translations } from "../../utils/translations";
+import Footer from "../molecules/Footer";
 
 export default function Contact() {
     const { lang } = useLanguage();
@@ -12,6 +13,7 @@ export default function Contact() {
         <SectionLayout id="contact">
             <SectionTitle>{t.contactTitle}</SectionTitle>
             <ContactForm />
+            <Footer />
         </SectionLayout>
     )
 }

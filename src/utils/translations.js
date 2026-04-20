@@ -52,6 +52,8 @@ export const translations = {
         send: "Enviar",
         formMessage: "Mensaje enviado correctamente",
         errorMessage: "Hubo un error al enviar el mensaje",
+        headerFooter: "Conectemos",
+        messageFooter: "Listo para colaborar en tu próximo desafío",
     },
 
     en: {
@@ -107,5 +109,8 @@ export const translations = {
         send: "Send",
         formMessage: "Message sent successfully",
         errorMessage: "There was an error sending the message",
+        headerFooter: "Let's connect",
+        messageFooter: "Ready to collaborate on your next challenge",
+
     }
 }
