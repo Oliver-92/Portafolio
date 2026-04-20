@@ -43,7 +43,7 @@ export default function ContactForm() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-2 w-full max-w-200 mx-auto p-5 rounded-(--border-radius)">
+            className="flex flex-col gap-2 w-full max-w-200 mx-auto items-center p-5 rounded-(--border-radius)">
             <LabelForm htmlFor="name">{t.name}</LabelForm>
             <InputForm id="name" name="name" required />
 

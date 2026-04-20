@@ -17,7 +17,7 @@ export default function About() {
                 <AboutText />
                 <Avatar />
             </div>
-            <BadgeContainer />
+            <BadgeContainer type="tools" />
         </SectionLayout>
     )
 }
