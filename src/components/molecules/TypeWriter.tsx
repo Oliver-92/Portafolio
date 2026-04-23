@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typewriter from "typewriter-effect/dist/core";
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../context/LangContext";
 
 const texts = {
     es: [
@@ -16,7 +16,7 @@ const texts = {
 export function SubtitleTypewriter() {
     const { lang } = useLanguage();
     const ref = useRef<HTMLSpanElement | null>(null);
-    const instanceRef = useRef<any>(null);
+    const instanceRef = useRef<Typewriter | null>(null);
 
     useEffect(() => {
         if (!ref.current) return;
@@ -50,5 +50,23 @@ export function SubtitleTypewriter() {
         };
     }, [lang]);
 
-    return <h3 className="font-mono font-semibold text-lg sm:text-xl min-h-14 text-center" > <span ref={ref} /> </h3>;
+    return (
+        <div
+            className="hero-subtitle w-full max-w-xs sm:max-w-sm mx-auto"
+            style={{ height: "3rem" }}
+        >
+            <h3
+                className="font-mono font-light text-sm sm:text-base text-center px-6 rounded-full w-full h-full flex items-center justify-center overflow-hidden"
+                style={{
+                    background: "var(--card-bg)",
+                    border: "1px solid var(--card-border)",
+                    backdropFilter: "blur(8px)",
+                    WebkitBackdropFilter: "blur(8px)",
+                    whiteSpace: "nowrap",
+                }}
+            >
+                <span ref={ref} />
+            </h3>
+        </div>
+    );
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
 import Button from "../atoms/Button";
 import InputForm from "../atoms/InputForm";
@@ -18,8 +18,19 @@ export default function ContactForm() {
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
+        // Basic validation
+        const email = data.email as string;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setStatus("error");
+            return;
+        }
+
         try {
-            const response = await fetch(import.meta.env.VITE_FORMSPRE_URL, {
+            const url = import.meta.env.VITE_FORMSPRE_URL;
+            if (!url) throw new Error("Formspree URL is missing");
+
+            const response = await fetch(url, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -43,7 +54,13 @@ export default function ContactForm() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-2 w-full max-w-200 mx-auto items-center p-5 rounded-(--border-radius)">
+            className="flex flex-col gap-2 w-full max-w-200 mx-auto items-center p-6 rounded-(--border-radius) backdrop-blur-md transition-all duration-(--transition-speed) ease"
+            style={{
+                background: "var(--card-bg)",
+                border: "1px solid var(--card-border)",
+                boxShadow: "0 8px 32px rgba(0,0,0,0.1)",
+            }}
+        >
             <LabelForm htmlFor="name">{t.name}</LabelForm>
             <InputForm id="name" name="name" required />
 

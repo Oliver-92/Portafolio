@@ -5,7 +5,15 @@ import beverlyTrends from "../assets/beverly-trends.webp";
 import digitalBank from "../assets/digital-bank.webp";
 import productList from "../assets/product-list.webp";
 
-export const dataProjects = [
+export interface ProjectData {
+    id: string;
+    github: string;
+    demo: string;
+    img: string;
+    alt: string;
+}
+
+export const dataProjects: ProjectData[] = [
     {
         id: "nevermindShop",
         github: "https://github.com/Oliver-92/React-Ecommerce-TP-Final",

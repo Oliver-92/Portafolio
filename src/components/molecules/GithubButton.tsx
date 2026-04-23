@@ -1,6 +1,6 @@
 import Button from "../atoms/Button";
 import GithubIcon from "../atoms/GithubIcon";
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
 
 export default function GithubButton({ url }: { url: string }) {

@@ -20,16 +20,18 @@ export default function Button({
     const variantStyles = {
         primary: `text-(--primary-color)
                 text-xs sm:text-sm 
-                bg-(--bg-secondary) [border:var(--border-buttons)] 
                 rounded-(--border-radius) transition-all 
                 duration-(--transition-speed) ease 
-                hover:bg-(--bg-buttons-hover) 
-                hover:[box-shadow:var(--box-shadow-buttons-hover)] 
-                p-1.5 sm:p-2 m-1.5 sm:m-2`,
-        secondary: `bg-[#007bff] text-white text-sm sm:text-base
-                    hover:bg-[#0056b3] p-1.5 sm:p-2 m-1.5 sm:m-2
+                p-1.5 sm:p-2 m-1.5 sm:m-2
+                backdrop-blur-md hover:-translate-y-1` +
+            `   border-1 [border:var(--border-buttons)] bg-(--bg-secondary) 
+                hover:[box-shadow:var(--box-shadow-buttons-hover)]`,
+        secondary: `text-white text-sm sm:text-base
+                    p-1.5 sm:p-2 m-1.5 sm:m-2 font-medium
                     rounded-(--border-radius) transition-all 
-                    duration-(--transition-speed) ease`,
+                    duration-(--transition-speed) ease
+                    bg-gradient-to-r from-(--accent-color) to-blue-600
+                    hover:scale-102 hover:shadow-[0_4px_20px_var(--accent-glow)]`
     };
 
     return (

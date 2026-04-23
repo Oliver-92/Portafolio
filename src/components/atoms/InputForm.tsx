@@ -32,7 +32,7 @@ export default function InputForm(
                 autoComplete={autoComplete}
                 minLength={minLength}
                 maxLength={maxLength}
-                className="w-11/12 p-2 m-2 [border:var(--border-buttons)] rounded-(--border-radius) bg-(--bg-secondary) text-(--primary-color)"
+                className="w-11/12 p-3 my-1 border border-(--card-border) rounded-(--border-radius) bg-[rgba(0,0,0,0.2)] text-(--primary-color) focus:outline-none focus:ring-2 focus:ring-(--accent-color) transition-all duration-(--transition-speed) ease"
             />
         ) : (
             <textarea
@@ -41,7 +41,7 @@ export default function InputForm(
                 required
                 minLength={minLength}
                 maxLength={maxLength}
-                className="w-11/12 p-2 m-2 [border:var(--border-buttons)] rounded-(--border-radius) bg-(--bg-secondary) text-(--primary-color)"
+                className="w-11/12 p-3 my-1 border border-(--card-border) rounded-(--border-radius) bg-[rgba(0,0,0,0.2)] text-(--primary-color) focus:outline-none focus:ring-2 focus:ring-(--accent-color) transition-all duration-(--transition-speed) ease resize-y"
                 rows={rows}
             />
         ))

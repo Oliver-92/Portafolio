@@ -4,19 +4,45 @@ import DescriptionCard from "../atoms/DescriptionCard";
 import GithubButton from "./GithubButton";
 import DemoButton from "./DemoButton";
 
-export default function ProjectCard({ project }: { project: any }) {
+interface Project {
+    title: string;
+    description: string;
+    github: string;
+    demo: string;
+    image: string;
+    alt: string;
+}
+
+export default function ProjectCard({ project }: { project: Project }) {
     return (
-        <div className="flex flex-col gap-4 bg-(--bg-secondary) 
-        [border:var(--border-buttons)] rounded-(--border-radius) 
-        hover:[box-shadow:var(--box-shadow-buttons-hover)]
-        hover:-translate-y-1 
-        transition-all duration-(--transition-speed) ease">
+        <div
+            className="
+                flex flex-col gap-0 overflow-hidden
+                rounded-(--border-radius)
+                backdrop-blur-md
+                transition-all duration-(--transition-speed) ease
+                hover:-translate-y-2
+            "
+            style={{
+                background: "var(--card-bg)",
+                border: "1px solid var(--card-border)",
+                boxShadow: "0 4px 24px rgba(0,0,0,0.2)",
+            }}
+            onMouseEnter={e => {
+                (e.currentTarget as HTMLDivElement).style.boxShadow =
+                    "var(--box-shadow-buttons-hover), 0 0 0 1px var(--card-border)";
+            }}
+            onMouseLeave={e => {
+                (e.currentTarget as HTMLDivElement).style.boxShadow =
+                    "0 4px 24px rgba(0,0,0,0.2)";
+            }}
+        >
             <ImageCard src={project.image} alt={project.alt} />
-            <div className="flex flex-col gap-2 mx-4">
+            <div className="flex flex-col gap-2 px-5 pt-4">
                 <TitleCard title={project.title} />
                 <DescriptionCard description={project.description} />
             </div>
-            <div className="flex gap-2 mt-auto mx-4 mb-4">
+            <div className="flex gap-2 mt-auto px-5 py-4">
                 <GithubButton url={project.github} />
                 <DemoButton url={project.demo} />
             </div>

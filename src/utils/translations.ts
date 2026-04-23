@@ -1,4 +1,37 @@
-export const translations = {
+export interface ProjectTranslation {
+    title: string;
+    desc: string;
+}
+
+export interface TranslationSchema {
+    index: string;
+    about: string;
+    projects: string;
+    contact: string;
+    aboutTitle: string;
+    projectsTitle: string;
+    aboutText: string;
+    avatarAlt: string;
+    githubButton: string;
+    demoButton: string;
+    nevermindShop: ProjectTranslation;
+    converterToWebp: ProjectTranslation;
+    weatherApp: ProjectTranslation;
+    beverlyTrends: ProjectTranslation;
+    digitalBank: ProjectTranslation;
+    productList: ProjectTranslation;
+    contactTitle: string;
+    name: string;
+    email: string;
+    comment: string;
+    send: string;
+    formMessage: string;
+    errorMessage: string;
+    headerFooter: string;
+    messageFooter: string;
+}
+
+export const translations: Record<"es" | "en", TranslationSchema> = {
     es: {
         // Navbar
         index: "Inicio",

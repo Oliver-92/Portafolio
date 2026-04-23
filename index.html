@@ -5,8 +5,25 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/portafolio.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ezequiel Oliver - Frontend Developer Portfolio. Discover projects developed with React, TypeScript, and modern web технологий." />
+  <meta name="keywords" content="Portfolio, Ezequiel Oliver, Frontend, React, Web Development, TypeScript" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portafolio - Ezequiel Oliver" />
+  <meta property="og:description" content="Frontend Developer specializing in React and modern UI/UX." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  
   <link href="/src/styles.css" rel="stylesheet">
   <title>Portafolio - Ezequiel Oliver</title>
+  <script>
+    (function() {
+      const saved = localStorage.getItem("preferredLanguage");
+      if (saved) {
+        document.documentElement.lang = saved;
+      }
+    })();
+  </script>
 </head>
 
 <body>

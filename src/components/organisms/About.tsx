@@ -1,6 +1,6 @@
 import SectionLayout from "../molecules/SectionLayout";
 import SectionTitle from "../atoms/SectionTitle";
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
 import AboutText from "../atoms/AboutText";
 import Avatar from "../atoms/Avatar";
