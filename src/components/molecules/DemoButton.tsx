@@ -1,6 +1,6 @@
 import Button from "../atoms/Button";
 import { ExternalLink } from "lucide-react";
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
 
 export default function DemoButton({ url }: { url: string }) {

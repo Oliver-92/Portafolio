@@ -1,4 +1,4 @@
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
 
 export default function AboutText() {

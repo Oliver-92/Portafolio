@@ -1,4 +1,4 @@
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../context/LangContext";
 import Button from "../atoms/Button";
 
 export function LanguageToggle() {
@@ -9,7 +9,7 @@ export function LanguageToggle() {
             id="languageToggle"
             ariaLabel="Change language"
             onClick={toggleLanguage}
-            className="toggle-btn"
+            className="w-7 h-7 sm:w-9 sm:h-9"
         >
             {lang === "es" ? "EN" : "ES"}
         </Button>

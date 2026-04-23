@@ -1,5 +1,5 @@
 import HeaderFooter from "../atoms/HeaderFooter";
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
 import BadgeContainer from "./BadgeContainer";
 import MessageFooter from "../atoms/MessageFooter";
