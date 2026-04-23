@@ -24,7 +24,7 @@ html {
   --bg-secondary: rgba(30, 35, 30, 0.5);
   --bg-buttons-hover: rgba(40, 45, 40, 0.7);
   --border-buttons: 1px solid rgba(255, 255, 255, 0.12);
-  --box-shadow-buttons-hover: 0 0 20px rgba(99, 179, 237, 0.3), 0 4px 15px rgba(0, 0, 0, 0.4);
+  --box-shadow-buttons-hover: 0 0 15px var(--accent-color);
   --animmation-stars: move-twink-back 100s linear infinite;
 
   /* Accent & Glass */
@@ -49,7 +49,6 @@ html {
   --bg-navbar-opaque: rgba(255, 255, 255, 0.8);
   --bg-secondary: rgba(255, 255, 255, 0.9);
   --bg-buttons-hover: rgba(230, 230, 235, 0.9);
-  --box-shadow-buttons-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
   --border-buttons: 1px solid rgba(36, 35, 35, 0.18);
   --animmation-stars: none;
 
@@ -72,6 +71,7 @@ body {
   padding: 0;
   color: var(--primary-color);
   background: var(--background-image);
+  background-attachment: fixed;
   animation: var(--animmation-stars);
 }
 
