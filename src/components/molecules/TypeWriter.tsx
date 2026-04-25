@@ -1,5 +1,4 @@
-import { useEffect, useRef } from "react";
-import Typewriter from "typewriter-effect/dist/core";
+import Typewriter from "typewriter-effect";
 import { useLanguage } from "../../context/LangContext";
 
 const texts = {
@@ -15,40 +14,7 @@ const texts = {
 
 export function SubtitleTypewriter() {
     const { lang } = useLanguage();
-    const ref = useRef<HTMLSpanElement | null>(null);
-    const instanceRef = useRef<Typewriter | null>(null);
-
-    useEffect(() => {
-        if (!ref.current) return;
-
-        // limpiar instancia anterior
-        if (instanceRef.current) {
-            instanceRef.current.stop();
-            instanceRef.current = null;
-        }
-
-        const languageTexts = texts[lang] || texts.es;
-
-        const typewriter = new Typewriter(ref.current, {
-            loop: true,
-            delay: 75,
-        });
-
-        languageTexts.forEach((text, index) => {
-            typewriter.typeString(text).pauseFor(200);
-            if (index < languageTexts.length - 1) {
-                typewriter.deleteAll().pauseFor(200);
-            }
-        });
-
-        typewriter.start();
-        instanceRef.current = typewriter;
-
-        // cleanup al desmontar o cambiar idioma
-        return () => {
-            typewriter.stop();
-        };
-    }, [lang]);
+    const languageTexts = texts[lang] || texts.es;
 
     return (
         <div
@@ -65,7 +31,15 @@ export function SubtitleTypewriter() {
                     whiteSpace: "nowrap",
                 }}
             >
-                <span ref={ref} />
+                <Typewriter
+                    options={{
+                        strings: languageTexts,
+                        autoStart: true,
+                        loop: true,
+                        delay: 75,
+                        deleteSpeed: 50,
+                    }}
+                />
             </h3>
         </div>
     );
