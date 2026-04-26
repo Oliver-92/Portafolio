@@ -33,12 +33,12 @@ Portfolio web profesional y responsivo que muestra mis proyectos como desarrolla
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/Oliver-92/Portafolio-React.git
+git clone https://github.com/Oliver-92/Portafolio.git
 ```
 
 2. Navega al directorio del proyecto:
 ```bash
-cd portafolio-react
+cd Portafolio
 ```
 
 3. Instala las dependencias:
@@ -61,7 +61,7 @@ npm run build
 La aplicación utiliza la metodología **Atomic Design** para organizar los componentes de React:
 
 ```text
-portafolio-react/
+Portafolio/
 ├── public/              # Archivos estáticos
 ├── src/                 # Código fuente
 │   ├── assets/          # Imágenes y recursos multimedia
