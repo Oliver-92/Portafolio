@@ -12,7 +12,7 @@ export default function BadgeContainer({ type }: { type: "tools" | "social" }) {
     return (
         <span className="flex justify-center gap-1 flex-wrap max-w-[1200px] p-1">
             {Object.entries(badges[type]).map(([name, url]) => {
-                const img = <img key={name} src={url} alt={`logo-${name}`} />;
+                const img = <img key={name} src={url} alt={`logo-${name}`} loading="lazy" />;
 
                 if (type === "social") {
                     return (
