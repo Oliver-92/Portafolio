@@ -1,28 +1,50 @@
+import html from "../assets/badges/HTML.svg"
+import css from "../assets/badges/CSS.svg"
+import javascript from "../assets/badges/JavaScript.svg"
+import typescript from "../assets/badges/TypeScript.svg"
+import python from "../assets/badges/Python.svg"
+import postgresql from "../assets/badges/PostgreSQL.svg"
+import sqlite from "../assets/badges/SQLite.svg"
+import react from "../assets/badges/React.svg"
+import reactRouter from "../assets/badges/React_Router.svg"
+import reactHookForm from "../assets/badges/React_Hook_Form.svg"
+import nextjs from "../assets/badges/Next.svg"
+import tailwind from "../assets/badges/Tailwind.svg"
+import bootstrap from "../assets/badges/Bootstrap.svg"
+import nodejs from "../assets/badges/Node.svg"
+import flask from "../assets/badges/Flask.svg"
+import git from "../assets/badges/Git.svg"
+import vite from "../assets/badges/Vite.svg"
+import github from "../assets/badges/GitHub.svg"
+import linkedin from "../assets/badges/LinkedIn.svg"
+import telegram from "../assets/badges/Telegram.svg"
+import mail from "../assets/badges/Mail.svg"
+
 const badges = {
     tools: {
-        html: "./src/assets/badges/HTML.svg",
-        css: "./src/assets/badges/CSS.svg",
-        javascript: "./src/assets/badges/JavaScript.svg",
-        typescript: "./src/assets/badges/TypeScript.svg",
-        python: "./src/assets/badges/Python.svg",
-        postgresql: "./src/assets/badges/PostgreSQL.svg",
-        sqlite: "./src/assets/badges/SQLite.svg",
-        react: "./src/assets/badges/React.svg",
-        reactRouter: "./src/assets/badges/React_Router.svg",
-        reactHookForm: "./src/assets/badges/React_Hook_Form.svg",
-        nextjs: "./src/assets/badges/Next.svg",
-        tailwind: "./src/assets/badges/Tailwind.svg",
-        bootstrap: "./src/assets/badges/Bootstrap.svg",
-        nodejs: "./src/assets/badges/Node.svg",
-        flask: "./src/assets/badges/Flask.svg",
-        git: "./src/assets/badges/Git.svg",
-        vite: "./src/assets/badges/Vite.svg",
+        html,
+        css,
+        javascript,
+        typescript,
+        python,
+        postgresql,
+        sqlite,
+        react,
+        reactRouter,
+        reactHookForm,
+        nextjs,
+        tailwind,
+        bootstrap,
+        nodejs,
+        flask,
+        git,
+        vite,
     },
     social: {
-        github: "./src/assets/badges/GitHub.svg",
-        linkedin: "./src/assets/badges/LinkedIn.svg",
-        telegram: "./src/assets/badges/Telegram.svg",
-        mail: "./src/assets/badges/Mail.svg",
+        github,
+        linkedin,
+        telegram,
+        mail,
     }
 }
 
