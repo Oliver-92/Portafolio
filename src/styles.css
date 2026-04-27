@@ -1,9 +1,6 @@
 @import "tailwindcss";
 @config "../tailwind.config.ts";
-@import "@fontsource/coda/400.css";
-@import "@fontsource/coda/800.css";
-@import "@fontsource/fira-code/300.css";
-@import "@fontsource/fira-code/700.css";
+
 
 * {
   box-sizing: border-box;

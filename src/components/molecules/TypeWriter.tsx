@@ -12,7 +12,7 @@ const texts = {
     ],
 };
 
-export function SubtitleTypewriter() {
+export default function SubtitleTypewriter() {
     const { lang } = useLanguage();
     const languageTexts = texts[lang] || texts.es;
 

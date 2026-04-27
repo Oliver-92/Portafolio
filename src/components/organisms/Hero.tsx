@@ -1,5 +1,7 @@
 import SectionLayout from "../molecules/SectionLayout";
-import { SubtitleTypewriter } from "../molecules/TypeWriter";
+import { lazy, Suspense } from "react";
+
+const SubtitleTypewriter = lazy(() => import("../molecules/TypeWriter.tsx"));
 
 export default function Hero() {
     return (
@@ -10,7 +12,9 @@ export default function Hero() {
                 <span>EZEQUIEL </span>
                 <span style={{ color: "var(--accent-color)" }}>OLIVER</span>
             </h1>
-            <SubtitleTypewriter />
+            <Suspense fallback={null}>
+                <SubtitleTypewriter />
+            </Suspense>
         </SectionLayout>
     )
 }
