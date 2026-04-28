@@ -1,0 +1,1 @@
+import{i as e,r as t}from"./LangContext-Db8-Z-vW.js";var n=e(),r=t();function i(e){let t=(0,n.c)(2),{children:i}=e,a;return t[0]===i?a=t[1]:(a=(0,r.jsx)(`h2`,{className:`font-sans text-2xl sm:text-3xl font-medium w-full m-0`,children:i}),t[0]=i,t[1]=a),a}export{i as t};
