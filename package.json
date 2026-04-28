@@ -13,9 +13,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@fontsource/coda": "^5.2.8",
-    "@fontsource/fira-code": "^5.2.7",
-    "@fontsource/outfit": "^5.2.8",
     "@tailwindcss/vite": "^4.2.2",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.8.0",
