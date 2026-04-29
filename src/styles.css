@@ -12,7 +12,7 @@ html {
 
 /* Default styles for dark mode */
 :root {
-  --background-image: rgb(0, 0, 0) url("./assets/stars01.png") repeat top center;
+  --background-image: rgb(0, 0, 0) url("./assets/stars01.webp") repeat top center;
   --primary-color: rgb(255, 255, 255);
   --primary-font: "Coda", sans-serif;
   --secondary-font: "Fira Code", monospace;
