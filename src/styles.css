@@ -10,6 +10,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/* coda-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Coda';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/Portafolio/fonts/coda-v22-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fira-code-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/Portafolio/fonts/fira-code-v27-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* Default styles for dark mode */
 :root {
   --background-image: rgb(0, 0, 0) url("./assets/stars01.webp") repeat top center;

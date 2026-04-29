@@ -101,6 +101,6 @@ Este proyecto está bajo la Licencia MIT.
 - [Framer Motion](https://www.framer.com/motion/) por su motor de animaciones increíble.
 - [Typewriter Effect](https://github.com/tameemsafi/typewriterjs) por los efectos de escritura.
 - [Shields.io](https://shields.io/) por los badges de tecnologías.
-- [Fontsource](https://fontsource.org/) por la provisión eficiente de tipografías.
+- [GoogleFonts](https://fonts.google.com/) por las tipografías.
 - [Lucide React](https://lucide.dev/) por la librería de íconos hermosos y ligeros.
 - [Freepik](https://www.freepik.es/) por las imágenes utilizadas (Background light mode).
