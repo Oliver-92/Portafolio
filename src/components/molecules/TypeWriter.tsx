@@ -21,7 +21,7 @@ export default function SubtitleTypewriter() {
             className="hero-subtitle w-full max-w-xs sm:max-w-sm mx-auto"
             style={{ height: "3rem" }}
         >
-            <h3
+            <h2
                 className="font-mono font-light text-sm sm:text-base text-center px-6 rounded-full w-full h-full flex items-center justify-center overflow-hidden"
                 style={{
                     background: "var(--card-bg)",
@@ -40,7 +40,7 @@ export default function SubtitleTypewriter() {
                         deleteSpeed: 50,
                     }}
                 />
-            </h3>
+            </h2>
         </div>
     );
 }
