@@ -13,16 +13,18 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Suspense fallback={null}>
-        <About />
-      </Suspense>
-      <Suspense fallback={null}>
-        <Projects />
-      </Suspense>
-      <Suspense fallback={null}>
-        <Contact />
-      </Suspense>
+      <main>
+        <Hero />
+        <Suspense fallback={null}>
+          <About />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Projects />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Contact />
+        </Suspense>
+      </main>
     </>
   )
 }
