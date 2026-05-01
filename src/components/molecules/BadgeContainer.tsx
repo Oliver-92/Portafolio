@@ -1,7 +1,7 @@
 import badges from "../../utils/badges"
 import * as socialLinks from "../../utils/dataContact"
 
-export default function BadgeContainer({ type }: { type: "tools" | "social" }) {
+export default function BadgeContainer({ type, tools }: { type: "tools" | "social", tools?: string[] }) {
     const socialUrls: Record<string, string> = {
         github: socialLinks.github,
         linkedin: socialLinks.linkedin,
@@ -11,13 +11,17 @@ export default function BadgeContainer({ type }: { type: "tools" | "social" }) {
 
     return (
         <span className="flex justify-center gap-1 flex-wrap max-w-[1200px] p-1">
-            {Object.entries(badges[type]).map(([name, url]) => {
+            {Object.entries(badges[type]).map(([name, src]) => {
+                if (type === "tools" && tools && !tools.includes(name)) {
+                    return null;
+                }
+
                 const img = <img
                     key={name}
-                    src={url}
+                    src={src}
                     alt={`logo-${name}`}
                     loading="lazy"
-                    className="h-6 w-auto object-contain"
+                    className="h-4 sm:h-6 w-auto object-contain"
                     height={24}
                 />;
 

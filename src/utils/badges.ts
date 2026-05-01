@@ -19,6 +19,12 @@ import github from "../assets/badges/GitHub.svg"
 import linkedin from "../assets/badges/LinkedIn.svg"
 import telegram from "../assets/badges/Telegram.svg"
 import mail from "../assets/badges/Mail.svg"
+import firebase from "../assets/badges/Firebase.svg"
+import netlify from "../assets/badges/Netlify.svg"
+import mongoDB from "../assets/badges/MongoDB.svg"
+import supabase from "../assets/badges/Supabase.svg"
+import vercel from "../assets/badges/Vercel.svg"
+import github_pages from "../assets/badges/GitHub_Pages.svg"
 
 const badges = {
     tools: {
@@ -39,6 +45,12 @@ const badges = {
         flask,
         git,
         vite,
+        firebase,
+        netlify,
+        mongoDB,
+        supabase,
+        vercel,
+        github_pages,
     },
     social: {
         github,

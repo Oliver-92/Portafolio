@@ -19,6 +19,7 @@ export default function Projects() {
             demo: project.demo,
             image: project.img,
             alt: project.alt,
+            tools: project.tools,
         }
     })
 
