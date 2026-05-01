@@ -43,13 +43,15 @@ export default function ProjectCard({ project }: { project: Project }) {
                 <BadgeContainer type="tools" tools={project.tools} />
             </ImageCard>
 
-            <div className="flex flex-col gap-2 px-5 pt-4">
-                <TitleCard title={project.title} />
-                <DescriptionCard description={project.description} />
-            </div>
-            <div className="flex gap-2 mt-auto px-5 py-4">
-                <GithubButton url={project.github} />
-                <DemoButton url={project.demo} />
+            <div>
+                <div className="flex flex-col gap-2 px-5 pt-4">
+                    <TitleCard title={project.title} />
+                    <DescriptionCard description={project.description} />
+                </div>
+                <div className="flex gap-2 mt-auto px-5 py-4">
+                    <GithubButton url={project.github} />
+                    <DemoButton url={project.demo} />
+                </div>
             </div>
         </div>
     )

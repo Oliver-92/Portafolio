@@ -4,6 +4,7 @@ import { useLanguage } from "../../context/LangContext";
 import { translations, type ProjectTranslation } from "../../utils/translations";
 import { dataProjects } from "../../utils/dataProjects";
 import ProjectCard from "../molecules/ProjectCard";
+import Carousel from "../atoms/Carousel";
 
 export default function Projects() {
     const { lang } = useLanguage();
@@ -26,11 +27,11 @@ export default function Projects() {
     return (
         <SectionLayout id="projects">
             <SectionTitle>{t.projectsTitle}</SectionTitle>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Carousel>
                 {projects.map((project) => (
                     <ProjectCard key={project.key} project={project} />
                 ))}
-            </div>
+            </Carousel>
         </SectionLayout>
     )
 }
