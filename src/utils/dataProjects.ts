@@ -11,6 +11,7 @@ export interface ProjectData {
     demo: string;
     img: string;
     alt: string;
+    tools?: string[];
 }
 
 export const dataProjects: ProjectData[] = [
@@ -20,6 +21,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://react-ecommerce-final-project.netlify.app/",
         img: nevermindShop,
         alt: "nevermind-shop",
+        tools: ["react", "vite", "firebase", "bootstrap", "netlify"]
     },
     {
         id: "converterToWebp",
@@ -27,6 +29,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://oliver-92.github.io/Convertidor-Webp/",
         img: converterToWebp,
         alt: "converter-to-webp",
+        tools: ["html", "css", "javascript", "github_pages"]
     },
     {
         id: "weatherApp",
@@ -34,6 +37,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://visionary-cupcake-bc5bc6.netlify.app/",
         img: weatherApp,
         alt: "weather-app",
+        tools: ["react", "vite", "css", "netlify"]
     },
     {
         id: "beverlyTrends",
@@ -41,6 +45,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://oliver-92.github.io/Beverly-Trends/",
         img: beverlyTrends,
         alt: "beverly-trends",
+        tools: ["html", "css", "javascript", "bootstrap", "github_pages"]
     },
     {
         id: "digitalBank",
@@ -48,6 +53,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://fancy-melba-7b1280.netlify.app/",
         img: digitalBank,
         alt: "digital-bank",
+        tools: ["react", "vite", "css", "netlify"]
     },
     {
         id: "productList",
@@ -55,5 +61,6 @@ export const dataProjects: ProjectData[] = [
         demo: "https://dulcet-pastelito-8cf073.netlify.app/",
         img: productList,
         alt: "product-list",
+        tools: ["react", "vite", "css", "netlify"]
     },
 ]

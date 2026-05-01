@@ -3,6 +3,7 @@ import TitleCard from "../atoms/TitleCard";
 import DescriptionCard from "../atoms/DescriptionCard";
 import GithubButton from "./GithubButton";
 import DemoButton from "./DemoButton";
+import BadgeContainer from "./BadgeContainer";
 
 interface Project {
     title: string;
@@ -11,6 +12,7 @@ interface Project {
     demo: string;
     image: string;
     alt: string;
+    tools?: string[];
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -37,14 +39,19 @@ export default function ProjectCard({ project }: { project: Project }) {
                     "0 4px 24px rgba(0,0,0,0.2)";
             }}
         >
-            <ImageCard src={project.image} alt={project.alt} />
-            <div className="flex flex-col gap-2 px-5 pt-4">
-                <TitleCard title={project.title} />
-                <DescriptionCard description={project.description} />
-            </div>
-            <div className="flex gap-2 mt-auto px-5 py-4">
-                <GithubButton url={project.github} />
-                <DemoButton url={project.demo} />
+            <ImageCard src={project.image} alt={project.alt}>
+                <BadgeContainer type="tools" tools={project.tools} />
+            </ImageCard>
+
+            <div>
+                <div className="flex flex-col gap-2 px-5 pt-4">
+                    <TitleCard title={project.title} />
+                    <DescriptionCard description={project.description} />
+                </div>
+                <div className="flex gap-2 mt-auto px-5 py-4">
+                    <GithubButton url={project.github} />
+                    <DemoButton url={project.demo} />
+                </div>
             </div>
         </div>
     )
