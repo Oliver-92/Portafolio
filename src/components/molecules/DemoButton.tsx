@@ -11,9 +11,9 @@ export default function DemoButton({ url }: { url: string }) {
         <Button
             ariaLabel="Demo button"
             onClick={() => window.open(url, "_blank")}
-            className="flex gap-2 items-center"
+            className="flex gap-1 sm:gap-2"
         >
-            <ExternalLink size={16} />
+            <ExternalLink className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5" />
             {demoButton}
         </Button>
     );
