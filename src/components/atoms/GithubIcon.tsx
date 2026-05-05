@@ -4,7 +4,7 @@ export default function GithubIcon() {
             stroke="currentColor"
             fill="currentColor"
             strokeWidth="0" viewBox="0 0 496 512"
-            className="h-4 w-4"
+            className="h-3.5 w-3.5 sm:h-4.5 sm:w-4.5"
             height="1em"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"

@@ -19,14 +19,14 @@ export default function Button({
 }) {
     const variantStyles = {
         primary: `text-(--primary-color)
-                text-xs sm:text-sm 
+                text-xs sm:text-sm
                 rounded-(--border-radius) transition-all 
                 duration-(--transition-speed) ease 
                 p-1.5 sm:p-2 m-1.5 sm:m-2
                 backdrop-blur-md hover:-translate-y-1` +
             `   border-1 [border:var(--border-buttons)] bg-(--bg-secondary) 
                 hover:[box-shadow:var(--box-shadow-buttons-hover)]`,
-        secondary: `text-white text-sm sm:text-base
+        secondary: `text-white text-xs sm:text-base
                     p-1.5 sm:p-2 m-1.5 sm:m-2 font-medium
                     rounded-(--border-radius) transition-all 
                     duration-(--transition-speed) ease
