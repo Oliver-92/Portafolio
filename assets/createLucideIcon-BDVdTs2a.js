@@ -1,10 +1,10 @@
 import{a as e,i as t,r as n,u as r}from"./LangContext-Db8-Z-vW.js";var i=t(),a=n();function o(e){let t=(0,i.c)(9),{id:n,ariaLabel:r,onClick:o,children:s,className:c,icon:l,variant:u,disabled:d}=e,f=u===void 0?`primary`:u,p=d===void 0?!1:d,m;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(m={primary:`text-(--primary-color)
-                text-xs sm:text-sm 
+                text-xs sm:text-sm
                 rounded-(--border-radius) transition-all 
                 duration-(--transition-speed) ease 
                 p-1.5 sm:p-2 m-1.5 sm:m-2
                 backdrop-blur-md hover:-translate-y-1   border-1 [border:var(--border-buttons)] bg-(--bg-secondary) 
-                hover:[box-shadow:var(--box-shadow-buttons-hover)]`,secondary:`text-white text-sm sm:text-base
+                hover:[box-shadow:var(--box-shadow-buttons-hover)]`,secondary:`text-white text-xs sm:text-base
                     p-1.5 sm:p-2 m-1.5 sm:m-2 font-medium
                     rounded-(--border-radius) transition-all 
                     duration-(--transition-speed) ease
