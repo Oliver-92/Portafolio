@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
+import NavLink from "../atoms/NavLink";
 
 export default function Navbar() {
     const { lang } = useLanguage();
@@ -37,20 +38,9 @@ export default function Navbar() {
             <ul className="flex justify-start md:justify-center items-center h-full gap-4 md:gap-7 list-none px-4 m-0">
                 {links.map(({ href, label }) => (
                     <li key={href}>
-                        <a
-                            href={href}
-                            className="
-                                relative text-xs sm:text-sm font-medium
-                                text-(--primary-color) no-underline
-                                transition-colors duration-(--transition-speed) ease
-                                after:content-[''] after:absolute after:-bottom-1 after:left-0
-                                after:w-0 after:h-[2px] after:bg-(--accent-color)
-                                after:transition-all after:duration-(--transition-speed) after:ease
-                                hover:after:w-full hover:text-(--accent-color)
-                            "
-                        >
+                        <NavLink href={href}>
                             {label}
-                        </a>
+                        </NavLink>
                     </li>
                 ))}
             </ul>

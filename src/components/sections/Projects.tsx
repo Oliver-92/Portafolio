@@ -1,4 +1,4 @@
-import SectionLayout from "../molecules/SectionLayout";
+import SectionLayout from "../layout/SectionLayout";
 import SectionTitle from "../atoms/SectionTitle";
 import { useLanguage } from "../../context/LangContext";
 import { translations, type ProjectTranslation } from "../../utils/translations";

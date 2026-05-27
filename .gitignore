@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 .env
+
+# Reviews
+atomic_design_review.md
+
