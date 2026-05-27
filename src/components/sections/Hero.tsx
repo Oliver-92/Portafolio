@@ -1,4 +1,4 @@
-import SectionLayout from "../molecules/SectionLayout";
+import SectionLayout from "../layout/SectionLayout.tsx";
 import { lazy, Suspense } from "react";
 
 const SubtitleTypewriter = lazy(() => import("../molecules/TypeWriter.tsx"));

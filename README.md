@@ -66,9 +66,11 @@ Portafolio/
 ├── src/                 # Código fuente
 │   ├── assets/          # Imágenes y recursos multimedia
 │   ├── components/      # Componentes UI
-│   │   ├── atoms/       # Componentes más pequeños (Botones, Iconos, Inputs)
-│   │   ├── molecules/   # Agrupación de átomos (Formularios, Tarjetas, Toggles)
-│   │   └── organisms/   # Componentes complejos y secciones enteras (Header, Hero, About, Projects)
+│   │   ├── atoms/       # Componentes indivisibles (Botones, Iconos, Inputs)
+│   │   ├── molecules/   # Agrupaciones simples de átomos (Tarjetas, Toggles)
+│   │   ├── organisms/   # Componentes complejos (Carrusel, Formularios, Header)
+│   │   ├── layout/      # Componentes estructurales de diseño (SectionLayout)
+│   │   └── sections/    # Secciones completas de la página (Hero, About, Projects, Contact)
 │   ├── context/         # Estado global (Ej. LanguageProvider, ThemeProvider)
 │   ├── utils/           # Datos estáticos, traducciones y funciones de utilidad
 │   ├── App.tsx          # Componente raíz

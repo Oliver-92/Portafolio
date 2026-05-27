@@ -1,10 +1,10 @@
-import SectionLayout from "../molecules/SectionLayout";
+import SectionLayout from "../layout/SectionLayout";
 import SectionTitle from "../atoms/SectionTitle";
 import { useLanguage } from "../../context/LangContext";
 import { translations, type ProjectTranslation } from "../../utils/translations";
 import { dataProjects } from "../../utils/dataProjects";
 import ProjectCard from "../molecules/ProjectCard";
-import Carousel from "../atoms/Carousel";
+import Carousel from "../organisms/Carousel";
 
 export default function Projects() {
     const { lang } = useLanguage();

@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
 import Button from "../atoms/Button";
-import InputForm from "../atoms/InputForm";
-import LabelForm from "../atoms/LabelForm";
+import FormField from "../molecules/FormField";
+import FormMessage from "../atoms/FormMessage";
 
 export default function ContactForm() {
     const { lang } = useLanguage();
@@ -61,34 +61,23 @@ export default function ContactForm() {
                 boxShadow: "0 8px 32px rgba(0,0,0,0.1)",
             }}
         >
-            <LabelForm htmlFor="name">{t.name}</LabelForm>
-            <InputForm id="name" name="name" required />
+            <FormField id="name" name="name" label={t.name} required />
 
-            <LabelForm htmlFor="email">{t.email}</LabelForm>
-            <InputForm type="email" id="email" name="email" required autoComplete="email" />
+            <FormField type="email" id="email" name="email" label={t.email} autoComplete="email" required />
 
-            <LabelForm htmlFor="comment">{t.comment}</LabelForm>
-            <InputForm as="textarea" rows={4} id="comment" name="comment" required minLength={10} maxLength={500} />
+            <FormField as="textarea" rows={4} id="comment" name="comment" label={t.comment} required minLength={10} maxLength={500} />
 
             <Button
                 ariaLabel={t.send}
-                className="w-11/12 mx-auto"
+                className="w-11/12 mx-auto mt-4"
                 variant="secondary"
                 disabled={status === "submitting"}
             >
                 {status === "submitting" ? "..." : t.send}
             </Button>
 
-            {status === "success" && (
-                <p className="text-green-500 mt-2 text-center font-bold">
-                    {t.formMessage}
-                </p>
-            )}
-            {status === "error" && (
-                <p className="text-red-500 mt-2 text-center font-bold">
-                    {t.errorMessage}
-                </p>
-            )}
+            {status === "success" && <FormMessage type="success" message={t.formMessage} />}
+            {status === "error" && <FormMessage type="error" message={t.errorMessage} />}
         </form>
     )
 }

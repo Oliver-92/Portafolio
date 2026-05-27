@@ -1,11 +1,11 @@
 import Header from './components/organisms/Header'
-import Hero from './components/organisms/Hero'
+import Hero from './components/sections/Hero'
 import './styles.css'
 import { lazy, Suspense } from "react";
 
-const About = lazy(() => import("./components/organisms/About"));
-const Projects = lazy(() => import("./components/organisms/Projects"));
-const Contact = lazy(() => import("./components/organisms/Contact"));
+const About = lazy(() => import("./components/sections/About"));
+const Projects = lazy(() => import("./components/sections/Projects"));
+const Contact = lazy(() => import("./components/sections/Contact"));
 
 function App() {
 

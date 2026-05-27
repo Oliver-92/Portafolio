@@ -1,5 +1,5 @@
-import SectionLayout from "../molecules/SectionLayout";
-import ContactForm from "../molecules/ContactForm";
+import SectionLayout from "../layout/SectionLayout";
+import ContactForm from "../organisms/ContactForm";
 import SectionTitle from "../atoms/SectionTitle";
 import { useLanguage } from "../../context/LangContext";
 import { translations } from "../../utils/translations";
