@@ -4,6 +4,10 @@ import converterToWebp from "../assets/convertidor-webp.webp";
 import beverlyTrends from "../assets/beverly-trends.webp";
 import digitalBank from "../assets/digital-bank.webp";
 import productList from "../assets/product-list.webp";
+import burgerBrand from "../assets/BurgerBrand.webp";
+import loopStudios from "../assets/Loopstudios.webp";
+import newsHomepage from "../assets/News_homepage.webp";
+import recipesApp from "../assets/Recipes_app.webp";
 
 export interface ProjectData {
     id: string;
@@ -15,6 +19,22 @@ export interface ProjectData {
 }
 
 export const dataProjects: ProjectData[] = [
+    {
+        id: "burgerBrand",
+        github: "https://github.com/Oliver-92/Burger-Next-App",
+        demo: "https://burger-next-app.vercel.app/",
+        img: burgerBrand,
+        alt: "burger-brand",
+        tools: ["nextjs", "typescript", "zustand", "vercel", "tailwind"]
+    },
+    {
+        id: "recipesApp",
+        github: "https://github.com/Oliver-92/Recipes_App",
+        demo: "https://recipes-app-react-vite.netlify.app/",
+        img: recipesApp,
+        alt: "recipes-app",
+        tools: ["react", "zustand", "tailwind", "firebase", "netlify"]
+    },
     {
         id: "nevermindShop",
         github: "https://github.com/Oliver-92/React-Ecommerce-TP-Final",
@@ -48,19 +68,35 @@ export const dataProjects: ProjectData[] = [
         tools: ["html", "css", "javascript", "bootstrap", "github_pages"]
     },
     {
-        id: "digitalBank",
-        github: "https://github.com/Oliver-92/digitalbank-landing-page",
-        demo: "https://fancy-melba-7b1280.netlify.app/",
-        img: digitalBank,
-        alt: "digital-bank",
-        tools: ["react", "vite", "css", "netlify"]
-    },
-    {
         id: "productList",
         github: "https://github.com/Oliver-92/Product-list-with-cart",
         demo: "https://dulcet-pastelito-8cf073.netlify.app/",
         img: productList,
         alt: "product-list",
+        tools: ["react", "vite", "css", "netlify"]
+    },
+    {
+        id: "loopStudios",
+        github: "https://github.com/Oliver-92/Loopstudios-landing-page",
+        demo: "https://peaceful-pegasus-1b0d7b.netlify.app/",
+        img: loopStudios,
+        alt: "loopstudios",
+        tools: ["react", "vite", "css", "netlify"]
+    },
+    {
+        id: "newsHomepage",
+        github: "https://github.com/Oliver-92/news-homepage",
+        demo: "https://gleaming-zuccutto-ab4616.netlify.app/",
+        img: newsHomepage,
+        alt: "news-homepage",
+        tools: ["react", "vite", "css", "netlify"]
+    },
+    {
+        id: "digitalBank",
+        github: "https://github.com/Oliver-92/digitalbank-landing-page",
+        demo: "https://fancy-melba-7b1280.netlify.app/",
+        img: digitalBank,
+        alt: "digital-bank",
         tools: ["react", "vite", "css", "netlify"]
     },
 ]

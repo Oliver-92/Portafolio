@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 rounded-(--border-radius)
                 backdrop-blur-md
                 transition-all duration-(--transition-speed) ease
-                m-4
+                m-1 sm:m-4
             "
             style={{
                 background: "var(--card-bg)",
