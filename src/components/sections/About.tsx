@@ -9,6 +9,7 @@ import BadgeContainer from "../molecules/BadgeContainer";
 export default function About() {
     const { lang } = useLanguage();
     const { aboutTitle } = translations[lang];
+    const tools = ["html", "css", "javascript", "typescript", "react", "nextjs", "tailwind", "nodejs", "postgresql"]
 
     return (
         <SectionLayout id="about-me">
@@ -17,7 +18,7 @@ export default function About() {
                 <AboutText />
                 <Avatar />
             </div>
-            <BadgeContainer type="tools" />
+            <BadgeContainer type="tools" tools={tools} />
         </SectionLayout>
     )
 }
