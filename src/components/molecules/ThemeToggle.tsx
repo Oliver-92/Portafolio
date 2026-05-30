@@ -1,24 +1,9 @@
-import { useState } from "react";
 import Button from "../atoms/Button";
 import { Sun, Moon } from "lucide-react";
+import { useTheme } from "../../context/ThemeContext";
 
 export function ThemeToggle() {
-    const [theme, setTheme] = useState<"light" | "dark">(() => {
-        const savedTheme = localStorage.getItem("theme") as "light" | "dark";
-        if (savedTheme) {
-            document.documentElement.setAttribute("data-theme", savedTheme);
-            return savedTheme;
-        }
-        return "dark";
-    });
-
-    const toggleTheme = () => {
-        const newTheme = theme === "dark" ? "light" : "dark";
-
-        setTheme(newTheme);
-        document.documentElement.setAttribute("data-theme", newTheme);
-        localStorage.setItem("theme", newTheme);
-    };
+    const { theme, toggleTheme } = useTheme();
 
     return (
         <Button
@@ -33,4 +18,3 @@ export function ThemeToggle() {
         </Button>
     );
 }
-

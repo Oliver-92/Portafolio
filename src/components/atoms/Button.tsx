@@ -1,6 +1,7 @@
 export default function Button({
     id,
     ariaLabel,
+    href,
     onClick,
     children,
     className,
@@ -10,6 +11,7 @@ export default function Button({
 }: {
     id?: string;
     ariaLabel: string;
+    href?: string;
     onClick?: () => void;
     children?: React.ReactNode;
     className?: string;
@@ -20,24 +22,42 @@ export default function Button({
     const variantStyles = {
         primary: `text-(--primary-color)
                 text-xs sm:text-sm
-                rounded-(--border-radius) transition-all 
-                duration-(--transition-speed) ease 
+                rounded-(--border-radius) transition-all
+                duration-(--transition-speed) ease
                 p-1.5 sm:p-2 m-1.5 sm:m-2
                 backdrop-blur-md hover:-translate-y-1` +
-            `   border-1 [border:var(--border-buttons)] bg-(--bg-secondary) 
+            `   border-1 [border:var(--border-buttons)] bg-(--bg-secondary)
                 hover:[box-shadow:var(--box-shadow-buttons-hover)]`,
         secondary: `text-white text-xs sm:text-base
                     p-1.5 sm:p-2 m-1.5 sm:m-2 font-medium
-                    rounded-(--border-radius) transition-all 
+                    rounded-(--border-radius) transition-all
                     duration-(--transition-speed) ease
                     bg-gradient-to-r from-(--accent-color) to-blue-600
                     hover:scale-102 hover:shadow-[0_4px_20px_var(--accent-glow)]`
     };
 
+    const classes = `cursor-pointer ${variantStyles[variant]} ${className || ""} ${disabled ? "opacity-50 cursor-not-allowed" : ""}`;
+
+    if (href) {
+        return (
+            <a
+                id={id}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes}
+                aria-label={ariaLabel}
+            >
+                {icon}
+                {children}
+            </a>
+        );
+    }
+
     return (
         <button
             id={id}
-            className={`cursor-pointer ${variantStyles[variant]} ${className || ""} ${disabled ? "opacity-50 cursor-not-allowed" : ""}`}
+            className={classes}
             aria-label={ariaLabel}
             onClick={onClick}
             disabled={disabled}

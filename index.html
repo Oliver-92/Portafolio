@@ -25,10 +25,11 @@
   <title>Portafolio - Ezequiel Oliver</title>
   <script>
     (function () {
-      const saved = localStorage.getItem("preferredLanguage");
-      if (saved) {
-        document.documentElement.lang = saved;
-      }
+      var lang = localStorage.getItem("preferredLanguage");
+      if (lang) document.documentElement.lang = lang;
+
+      var theme = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", theme);
     })();
   </script>
 </head>
