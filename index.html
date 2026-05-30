@@ -16,22 +16,26 @@
   <meta property="og:title" content="Portafolio - Ezequiel Oliver" />
   <meta property="og:description" content="Frontend Developer specializing in React and modern UI/UX." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.png" />
-
+  <meta property="og:url" content="https://oliver-92.github.io/Portafolio/" />
+  <meta property="og:image" content="https://oliver-92.github.io/Portafolio/screenshot01.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://oliver-92.github.io/Portafolio/screenshot01.png" />
+
   <title>Portafolio - Ezequiel Oliver</title>
   <script>
     (function () {
-      const saved = localStorage.getItem("preferredLanguage");
-      if (saved) {
-        document.documentElement.lang = saved;
-      }
+      var lang = localStorage.getItem("preferredLanguage");
+      if (lang) document.documentElement.lang = lang;
+
+      var theme = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", theme);
     })();
   </script>
-  <script type="module" crossorigin src="/Portafolio/assets/index-BUN4OrDZ.js"></script>
-  <link rel="modulepreload" crossorigin href="/Portafolio/assets/LangContext-Db8-Z-vW.js">
-  <link rel="modulepreload" crossorigin href="/Portafolio/assets/SectionLayout-BzpL2Cuh.js">
-  <link rel="modulepreload" crossorigin href="/Portafolio/assets/createLucideIcon-BDVdTs2a.js">
-  <link rel="stylesheet" crossorigin href="/Portafolio/assets/index-bhnZTfAf.css">
+  <script type="module" crossorigin src="/Portafolio/assets/index-USzlQ87U.js"></script>
+  <link rel="modulepreload" crossorigin href="/Portafolio/assets/LangContext-DmGuqlZ2.js">
+  <link rel="modulepreload" crossorigin href="/Portafolio/assets/createLucideIcon-RaqacqWb.js">
+  <link rel="modulepreload" crossorigin href="/Portafolio/assets/SectionLayout-C0BOCysa.js">
+  <link rel="stylesheet" crossorigin href="/Portafolio/assets/index-W2vehQX2.css">
 </head>
 
 <body>
