@@ -1,12 +1,9 @@
-// type Props = {
-//     as?: "input" | "textarea"
-// }
-
 export default function InputForm(
     { as = "input",
         type = "text",
         id = "name",
         name = "name",
+        required = false,
         autoComplete = "name",
         minLength = 2,
         maxLength = 50,
@@ -28,7 +25,7 @@ export default function InputForm(
                 type={type}
                 id={id}
                 name={name}
-                required
+                required={required}
                 autoComplete={autoComplete}
                 minLength={minLength}
                 maxLength={maxLength}
@@ -38,7 +35,7 @@ export default function InputForm(
             <textarea
                 id={id}
                 name={name}
-                required
+                required={required}
                 minLength={minLength}
                 maxLength={maxLength}
                 className="w-11/12 p-3 my-1 border border-(--card-border) rounded-(--border-radius) bg-[rgba(0,0,0,0.2)] text-(--primary-color) focus:outline-none focus:ring-2 focus:ring-(--accent-color) transition-all duration-(--transition-speed) ease resize-y"

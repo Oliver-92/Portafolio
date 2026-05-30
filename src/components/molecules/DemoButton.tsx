@@ -9,8 +9,8 @@ export default function DemoButton({ url }: { url: string }) {
 
     return (
         <Button
-            ariaLabel="Demo button"
-            onClick={() => window.open(url, "_blank")}
+            ariaLabel={demoButton}
+            href={url}
             className="flex gap-1 sm:gap-2"
         >
             <ExternalLink className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5" />

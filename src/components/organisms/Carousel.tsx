@@ -2,7 +2,7 @@ import { useState, Children } from "react";
 import CarouselButton from "../atoms/CarouselButton";
 import CarouselIndicators from "../molecules/CarouselIndicators";
 
-export default function Carousel({ children }: { children: React.ReactNode }) {
+export default function Carousel({ children, ariaLabel = "Carousel" }: { children: React.ReactNode; ariaLabel?: string }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const items = Children.toArray(children);
 
@@ -20,7 +20,7 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
     };
 
     const handleTouchEnd = () => {
-        if (!touchStart || !touchEnd) return;
+        if (touchStart === null || touchEnd === null) return;
         const distance = touchStart - touchEnd;
         const isLeftSwipe = distance > minSwipeDistance;
         const isRightSwipe = distance < -minSwipeDistance;
@@ -38,9 +38,20 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
 
     if (!items.length) return null;
 
+    const handleKeyDown = (e: React.KeyboardEvent) => {
+        if (e.key === "ArrowLeft") { e.preventDefault(); prevSlide(); }
+        if (e.key === "ArrowRight") { e.preventDefault(); nextSlide(); }
+    };
+
     return (
-        <div className="relative w-full py-4">
-            <div 
+        <div
+            className="relative w-full py-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) rounded-(--border-radius)"
+            role="region"
+            aria-label={ariaLabel}
+            tabIndex={0}
+            onKeyDown={handleKeyDown}
+        >
+            <div
                 className="overflow-hidden mx-2 sm:mx-8 md:mx-12"
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}

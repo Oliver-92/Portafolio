@@ -1,16 +1,6 @@
-export default function ImageCard({
-    src,
-    alt,
-    className,
-    onClick,
-}: {
-    src: string;
-    alt: string;
-    className?: string;
-    onClick?: () => void;
-}) {
+export default function ImageCard({ src, alt }: { src: string; alt: string }) {
     return (
-        <div className={`aspect-video relative overflow-hidden ${className}`} onClick={onClick}>
+        <div className="aspect-video relative overflow-hidden">
             <img
                 src={src}
                 alt={alt}

@@ -27,7 +27,7 @@ export default function Projects() {
     return (
         <SectionLayout id="projects">
             <SectionTitle>{t.projectsTitle}</SectionTitle>
-            <Carousel>
+            <Carousel ariaLabel={t.projectsTitle}>
                 {projects.map((project) => (
                     <ProjectCard key={project.key} project={project} />
                 ))}

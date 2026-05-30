@@ -9,21 +9,25 @@ export default function BadgeContainer({ type, tools }: { type: "tools" | "socia
         mail: `mailto:${socialLinks.mail}`
     };
 
+    const entries: [string, string][] = type === "tools" && tools
+        ? tools
+            .filter(name => name in badges.tools)
+            .map(name => [name, badges.tools[name as keyof typeof badges.tools]])
+        : Object.entries(badges[type]);
+
     return (
         <span className="flex justify-center gap-1 flex-wrap max-w-[1200px] p-1">
-            {Object.entries(badges[type]).map(([name, src]) => {
-                if (type === "tools" && tools && !tools.includes(name)) {
-                    return null;
-                }
-
-                const img = <img
-                    key={name}
-                    src={src}
-                    alt={`logo-${name}`}
-                    loading="lazy"
-                    className="h-4 sm:h-6 w-auto object-contain"
-                    height={24}
-                />;
+            {entries.map(([name, src]) => {
+                const img = (
+                    <img
+                        key={name}
+                        src={src}
+                        alt={`logo-${name}`}
+                        loading="lazy"
+                        className="h-4 sm:h-6 w-auto object-contain"
+                        height={24}
+                    />
+                );
 
                 if (type === "social") {
                     return (

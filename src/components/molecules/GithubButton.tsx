@@ -9,8 +9,8 @@ export default function GithubButton({ url }: { url: string }) {
 
     return (
         <Button
-            ariaLabel="Demo button"
-            onClick={() => window.open(url, "_blank")}
+            ariaLabel={githubButton}
+            href={url}
             className="flex gap-1 sm:gap-2"
         >
             <GithubIcon />

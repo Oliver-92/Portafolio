@@ -18,16 +18,8 @@ export default function ContactForm() {
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        // Basic validation
-        const email = data.email as string;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            setStatus("error");
-            return;
-        }
-
         try {
-            const url = import.meta.env.VITE_FORMSPRE_URL;
+            const url = import.meta.env.VITE_FORMSPREE_URL;
             if (!url) throw new Error("Formspree URL is missing");
 
             const response = await fetch(url, {

@@ -25,6 +25,5 @@ dist-ssr
 
 .env
 
-# Reviews
-pendientes.md
-
+## Review
+ANALISIS.md

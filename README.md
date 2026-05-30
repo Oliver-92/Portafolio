@@ -8,6 +8,10 @@ Portfolio web profesional y responsivo que muestra mis proyectos como desarrolla
 
 ![Portfolio Preview](./public/screenshot02.png)
 
+## 📊 Reporte de Lighthouse
+
+![Lighthouse Report](./public/lighthouse.png)
+
 
 ## 🚀 Características
 
