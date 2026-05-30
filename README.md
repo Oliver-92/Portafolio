@@ -104,7 +104,6 @@ Este proyecto está bajo la Licencia MIT.
 
 ## ✨ Agradecimientos
 
-- [Framer Motion](https://www.framer.com/motion/) por su motor de animaciones increíble.
 - [Typewriter Effect](https://github.com/tameemsafi/typewriterjs) por los efectos de escritura.
 - [Shields.io](https://shields.io/) por los badges de tecnologías.
 - [GoogleFonts](https://fonts.google.com/) por las tipografías.
