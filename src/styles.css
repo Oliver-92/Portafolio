@@ -33,7 +33,7 @@ html {
 }
 
 /* Default styles for dark mode */
-:root {
+@theme {
   --background-image: rgb(0, 0, 0) url("./assets/stars01.webp") repeat top center;
   --primary-color: rgb(255, 255, 255);
   --primary-font: "Coda", sans-serif;
@@ -57,6 +57,8 @@ html {
   --border-radius: 10px;
   --spacing-base: clamp(1rem, 2vw, 20px);
   --max-width-container: 1400px;
+
+  --animate-skills-scroll: skills-scroll 30s linear infinite;
 }
 
 /* Styles for light mode */
@@ -136,6 +138,16 @@ body {
   }
 }
 
+@keyframes skills-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .hero-title {
   animation: fade-in-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -154,6 +166,10 @@ body {
 .section-animate.section-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.animate-skills-scroll {
+  animation: skills-scroll 30s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -25,7 +25,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://burger-next-app.vercel.app/",
         img: burgerBrand,
         alt: "burger-brand",
-        tools: ["nextjs", "typescript", "zustand", "vercel", "tailwind"]
+        tools: ["nextjs", "typescript", "zustand", "tailwind"]
     },
     {
         id: "recipesApp",
@@ -33,7 +33,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://recipes-app-react-vite.netlify.app/",
         img: recipesApp,
         alt: "recipes-app",
-        tools: ["react", "zustand", "tailwind", "firebase", "netlify"]
+        tools: ["react", "zustand", "tailwind", "firebase"]
     },
     {
         id: "nevermindShop",
@@ -41,7 +41,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://react-ecommerce-final-project.netlify.app/",
         img: nevermindShop,
         alt: "nevermind-shop",
-        tools: ["react", "vite", "firebase", "bootstrap", "netlify"]
+        tools: ["react", "vite", "firebase", "bootstrap"]
     },
     {
         id: "converterToWebp",
@@ -49,7 +49,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://oliver-92.github.io/Convertidor-Webp/",
         img: converterToWebp,
         alt: "converter-to-webp",
-        tools: ["html", "css", "javascript", "github_pages"]
+        tools: ["html", "css", "javascript"]
     },
     {
         id: "weatherApp",
@@ -57,7 +57,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://visionary-cupcake-bc5bc6.netlify.app/",
         img: weatherApp,
         alt: "weather-app",
-        tools: ["react", "vite", "css", "netlify"]
+        tools: ["react", "vite", "css"]
     },
     {
         id: "beverlyTrends",
@@ -65,7 +65,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://oliver-92.github.io/Beverly-Trends/",
         img: beverlyTrends,
         alt: "beverly-trends",
-        tools: ["html", "css", "javascript", "bootstrap", "github_pages"]
+        tools: ["html", "css", "javascript", "bootstrap"]
     },
     {
         id: "productList",
@@ -73,7 +73,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://dulcet-pastelito-8cf073.netlify.app/",
         img: productList,
         alt: "product-list",
-        tools: ["react", "vite", "css", "netlify"]
+        tools: ["react", "vite", "css"]
     },
     {
         id: "loopStudios",
@@ -81,7 +81,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://peaceful-pegasus-1b0d7b.netlify.app/",
         img: loopStudios,
         alt: "loopstudios",
-        tools: ["react", "vite", "css", "netlify"]
+        tools: ["react", "vite", "css"]
     },
     {
         id: "newsHomepage",
@@ -89,7 +89,7 @@ export const dataProjects: ProjectData[] = [
         demo: "https://gleaming-zuccutto-ab4616.netlify.app/",
         img: newsHomepage,
         alt: "news-homepage",
-        tools: ["react", "vite", "css", "netlify"]
+        tools: ["react", "vite", "css"]
     },
     {
         id: "digitalBank",
@@ -97,6 +97,6 @@ export const dataProjects: ProjectData[] = [
         demo: "https://fancy-melba-7b1280.netlify.app/",
         img: digitalBank,
         alt: "digital-bank",
-        tools: ["react", "vite", "css", "netlify"]
+        tools: ["react", "vite", "css"]
     },
 ]
