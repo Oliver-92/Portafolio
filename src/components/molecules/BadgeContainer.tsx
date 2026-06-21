@@ -16,7 +16,7 @@ export default function BadgeContainer({ type, tools }: { type: "tools" | "socia
         : Object.entries(badges[type]);
 
     return (
-        <span className="flex justify-center gap-1 flex-wrap max-w-[1200px] p-1">
+        <span className="flex justify-center gap-1 flex-wrap max-w-300 p-1">
             {entries.map(([name, src]) => {
                 const img = (
                     <img

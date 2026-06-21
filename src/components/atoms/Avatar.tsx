@@ -9,7 +9,7 @@ export default function Avatar() {
         <img
             src={avatar}
             alt={avatarAlt}
-            className="aspect-square object-cover rounded-full w-6/12 md:w-1/2 max-w-lg"
+            className="aspect-square object-cover rounded-full w-6/12 md:w-1/2 max-w-lg border-3 border-(--accent-color) p-3"
             loading="lazy"
         />
     )
