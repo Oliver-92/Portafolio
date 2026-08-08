@@ -25,6 +25,8 @@ import mongoDB from "../assets/badges/MongoDB.svg"
 import supabase from "../assets/badges/Supabase.svg"
 import vercel from "../assets/badges/Vercel.svg"
 import github_pages from "../assets/badges/GitHub_Pages.svg"
+import expo from "../assets/badges/Expo.svg"
+import reactNative from "../assets/badges/React_Native.svg"
 
 const badges = {
     tools: {
@@ -51,6 +53,8 @@ const badges = {
         supabase,
         vercel,
         github_pages,
+        expo,
+        reactNative
     },
     social: {
         github,

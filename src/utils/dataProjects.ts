@@ -8,6 +8,7 @@ import burgerBrand from "../assets/BurgerBrand.webp";
 import loopStudios from "../assets/Loopstudios.webp";
 import newsHomepage from "../assets/News_homepage.webp";
 import recipesApp from "../assets/Recipes_app.webp";
+import carpiseñas from "../assets/carpiseñas.webp";
 
 export interface ProjectData {
     id: string;
@@ -19,6 +20,14 @@ export interface ProjectData {
 }
 
 export const dataProjects: ProjectData[] = [
+    {
+        id: "carpiseñas",
+        github: "https://github.com/Innov-lab2026/proyecto-lenguajeSenias-grupo9",
+        demo: "https://carpilanding.netlify.app/",
+        img: carpiseñas,
+        alt: "carpiseñas",
+        tools: ["reactNative", "expo", "typescript", "zustand"]
+    },
     {
         id: "burgerBrand",
         github: "https://github.com/Oliver-92/Burger-Next-App",

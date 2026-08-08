@@ -26,6 +26,7 @@ export interface TranslationSchema {
     productList: ProjectTranslation;
     loopStudios: ProjectTranslation;
     newsHomepage: ProjectTranslation;
+    carpiseñas: ProjectTranslation;
     contactTitle: string;
     name: string;
     email: string;
@@ -58,6 +59,11 @@ export const translations: Record<"es" | "en", TranslationSchema> = {
         demoButton: "Ver proyecto",
 
         // Web Projects
+        carpiseñas: {
+            title: "Carpiseñas",
+            desc: "App gamificada de aprendizaje de Lengua de Señas Argentina desarrollada con un equipo multidisciplinario."
+        },
+
         burgerBrand: {
             title: "BurgerBrand",
             desc: "Plataforma de delivery de hamburguesas artesanales que incluye un menú dinámico, personalización de productos, carrito de compras y panel de administración."
@@ -131,6 +137,11 @@ export const translations: Record<"es" | "en", TranslationSchema> = {
         demoButton: "See project",
 
         // Web Projects
+        carpiseñas: {
+            title: "Carpiseñas",
+            desc: "Gamified app for learning Argentine Sign Language developed with a multidisciplinary team."
+        },
+
         burgerBrand: {
             title: "BurgerBrand",
             desc: "A delivery app for a craft burger joint featuring a dynamic menu, product customization, shopping cart, and admin panel.",
