@@ -61,7 +61,7 @@ export const translations: Record<"es" | "en", TranslationSchema> = {
         // Web Projects
         carpiseñas: {
             title: "Carpiseñas",
-            desc: "App gamificada de aprendizaje de Lengua de Señas Argentina desarrollada con un equipo multidisciplinario."
+            desc: "App gamificada de aprendizaje de Lengua de Señas Argentina desarrollada con un equipo multidisciplinario. Lecciones con videos, un abecedario dactilológico y un sistema de recompensas."
         },
 
         burgerBrand: {
@@ -139,7 +139,7 @@ export const translations: Record<"es" | "en", TranslationSchema> = {
         // Web Projects
         carpiseñas: {
             title: "Carpiseñas",
-            desc: "Gamified app for learning Argentine Sign Language developed with a multidisciplinary team."
+            desc: "Gamified app for learning Argentine Sign Language developed with a multidisciplinary team. Video lessons, a dactylological alphabet, and a rewards system."
         },
 
         burgerBrand: {
